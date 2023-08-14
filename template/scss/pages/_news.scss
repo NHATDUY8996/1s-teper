@@ -1,0 +1,117 @@
+.searchCard{
+  width: 50%;
+  margin: auto;
+  backdrop-filter: blur(28px);
+  background-color: $color-white;
+  border-radius: 100rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  @include max(450px){
+    width: 80%;
+  }
+  input{
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+  .btn-searchCard{
+    position: absolute;
+    width: 3.6rem;
+    height: 3.6rem;
+    @include mid-flex;
+    border-radius: 50%;
+    background-color: $color-pri;
+    color: $color-white;
+    right: 1%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.filterCard{
+  @include mid-flex;
+  position: relative;
+  margin: 4rem auto;
+  @include max(1038px){
+   @include flex-wr;
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    right: 0!important;
+    left: auto;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    @include max(620px){
+      display: none !important;
+    }
+    &.swiper-button-disabled{
+      opacity: 0 !important;
+    }
+    &.btn-used-slide{
+      @include max(500px){
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  }
+  .category{
+    margin-right: 1rem;
+    font-weight: 700;
+    width: 10%;
+    @include max(1038px){
+      width: 100%;
+      margin: 1rem 0;
+    }
+  }
+  .filterSwiper{
+    width: 80%;
+    @include max(764px){
+    flex-shrink: 0;
+    width: 100%;
+    }
+  }
+  .filter-list{
+    .filter-item{
+      margin: 1rem 0;
+      width: auto !important;
+      &.active{
+        .filter-link{
+          border: 1px solid $color-third;
+          background-color: $color-five;
+        }
+      }
+      .filter-link{
+        padding: 1rem 2rem;
+        background-color: #EEE;
+        border-radius: 100rem;
+        color: $color-text-one;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.listTitle-usedCard{
+  .used-title1{
+    &::before{
+      @include max(450px){
+        display: none;
+      }
+    }
+  }
+  .detail-new{
+    left: -12rem;
+    bottom: -100%;
+  }
+  .detail-like{
+    right: -12rem;
+    top: -10%;
+  }
+}

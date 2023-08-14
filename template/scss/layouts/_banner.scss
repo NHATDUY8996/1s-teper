@@ -1,0 +1,228 @@
+.banner {
+  position: relative;
+  &-news{
+    .btn-down{
+      &::before{
+        background-color: $color-pri;
+      }
+    }
+    .banner-title{
+      &::after{
+        content: 'TIN TỨC';
+      }
+    }
+    .banner__img-main{
+      bottom: 0rem;
+    }
+  }
+  &-project{
+    .btn-down{
+      &::before{
+        background-color: $color-third;
+      }
+    }
+    .banner-title{
+      &::after{
+        content: 'DỰ ÁN CỦA 1STEPER';
+      }
+    }
+    .banner__img-main{
+      bottom: -1%;
+    }
+  }
+  &-partner{
+    .btn-down{
+      &::before{
+        background-color: $color-pri;
+      }
+    }
+    .banner-title{
+      &::after{
+        content: 'ĐỐI TÁC CỦA 1STEPER';
+      }
+    }
+    .banner__img-main{
+      bottom: -2%;
+    }
+  }
+  &-recruitment{
+    .btn-down{
+      &::before{
+        background-color: $color-pri;
+      }
+    }
+    .banner-title{
+      &::after{
+        content: 'TUYỂN DỤNG';
+      }
+    }
+    .banner__img-main{
+      bottom: -5%;
+      img{
+        width: 95% !important;
+      }
+    }
+  }
+  &-contact{
+    .btn-down{
+      &::before{
+        background-color: $color-pri;
+      }
+    }
+    .banner-title{
+      &::after{
+        content: 'LIÊN HỆ NGAY';
+      }
+    }
+    .banner__img-main{
+      bottom: -6%;
+
+    }
+  }
+  &-intro{
+    .btn-down{
+      &::before{
+        background-color: $color-pri;
+      }
+    }
+    .banner-title{
+      &::after{
+        content: 'GIỚI THIỆU VỀ 1STEPER';
+      }
+    }
+    .banner__img-main{
+      bottom: 0%;
+    }
+  }
+  .img-decor{
+    position: absolute;
+  }
+  .banner__top{
+    padding: 2rem 0;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    position: relative;
+    .breadcrumb{
+      margin: 1rem 0;
+    }
+    .banner-title{
+      color: $color-white;
+      position: relative;
+      -webkit-text-stroke: .1rem $color-black; /* width and color */
+      &::after{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: $color-third;
+        left: -3px;
+        top: -3px;
+        @include max(1200px){
+          left: -2px;
+          top: -2px;
+        }
+      }
+
+    }
+  }
+
+  .banner__img-main{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+      z-index: 1;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .btn-down{
+    @include mid-flex;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 5vw; 
+    height: 5vw;
+    // padding-top: 14%;
+    background-color: $color-white;
+    border-radius: 50%;
+    @include mid-flex;
+    margin:auto;
+    transition: .3s ease;
+    color: $color-white;
+    @include fz-24;
+    @include max(800px){
+      @include fz-10;
+      width: 8vw; 
+      height: 8vw;
+    }
+    // &:hover{
+    //   background-color: $color-pri;
+    //   transition: .3s ease;
+    //   .btn-down{
+    //     background-color: $color-white;
+    //     color: $color-pri;
+    //   transition: .3s ease;
+    //     &::after{
+    //   transition: .3s ease;
+    //       border: .2rem dashed $color-pri;
+    //     }
+    //   }
+    // }
+    &::after{
+      content: '';
+      position: absolute;
+      border: .2rem dashed $color-white;
+      width: 70%;
+      height: 70%;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      z-index: -1;
+      margin: auto;
+    transition: .3s ease;
+      animation: rotatecircle 10s infinite linear;
+      @include max(800px){
+        border: .1rem dashed $color-white;
+      }
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      width: 85%;
+      height: 85%;
+      z-index: -1;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      transition: .3s ease;
+    }
+  }
+  .imgYou{
+    left: 10%;
+    top:  10%;
+    width: 4vw;
+  }
+  .banner__left{
+    position: relative;
+    height: auto;
+  }
+  .banner__mid{
+    position: relative;
+
+
+  }
+  .banner__right{
+    position: relative;;
+
+  }
+}

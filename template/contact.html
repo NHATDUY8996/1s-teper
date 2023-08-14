@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="./css/backdoor.css">
+  <link rel="icon" type="image/png" href="./assets/images/mona.png" />
+  <title>Liên hệ</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="social">
+          <a href="#" class="social-item">
+            <img src="./assets/images/header/fb.png" alt="" class="social-img">
+          </a>
+          <a href="#" class="social-item">
+            <img src="./assets/images/header/you.png" alt="" class="social-img">
+          </a>
+          <a href="#" class="social-item">
+            <img src="./assets/images/header/inta.png" alt="" class="social-img">
+          </a>
+        </div>
+        <div class="header__mobile-list mobile ">
+          <!-- Cấu trúc html menu -->
+          <ul class="menu-list">
+            <li class="menu-item current-menu-item active">
+              <a href="" class="menu-link ">
+                <i class="fa-solid fa-house"></i>
+                Về chúng tôi
+              </a>
+            </li>
+            <li class="menu-item dropdown">
+
+              <a href="#" class="menu-link">
+                <i class="fa-solid fa-house"></i>
+                Dự án
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    Dự án 1
+                  </a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link">
+                    Dự án 2
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-handshake"></i>
+                Hợp tác
+              </a>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-city"></i>
+                Tuyển dụng
+              </a>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-newspaper"></i>
+                Tin tức
+              </a>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-phone"></i>
+                Liên hệ
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu-list">
+            <li class="menu-item current-menu-item active">
+              <a href="" class="menu-link ">
+                <i class="fa-solid fa-question"></i>
+                Hỗ trợ
+              </a>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-toolbox"></i>
+                Công cụ
+              </a>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-gear"></i>
+                Cài đặt
+              </a>
+            </li>
+            <li class="menu-item current-menu-item">
+              <a href="" class="menu-link">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Đăng nhập
+              </a>
+            </li>
+
+          </ul>
+          <ul class="menu-social">
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li class="menu-social-item">
+              <a href="" class="menu-social-link"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <a href="" class="header__logo">
+          <img src="./assets/images/header/logoheader.png" alt="">
+        </a>
+        <div class="header__list-btn">
+          <button class="header__btn-flag">
+            <div class="header__flag-main">
+              <div class="header__flag-img">
+                <img src="./assets/images/header/flag-vn.png" alt="">
+              </div>
+              <span>VN</span>
+              <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            </div>
+            <div class="header__fag-list">
+              <div class="header__flag-item">
+                <div class="header__flag-img">
+                  <img src="./assets/images/header/flag-vn.png" alt="">
+                </div>
+                <span>VN</span>
+              </div>
+              <div class="header__flag-item">
+                <div class="header__flag-img">
+                  <img src="./assets/images/header/flag-en.png" alt="">
+                </div>
+                <span>EN</span>
+              </div>
+              <div class="header__flag-item">
+                <div class="header__flag-img">
+                  <img src="./assets/images/header/flag-en.png" alt="">
+                </div>
+                <span>EN</span>
+              </div>
+            </div>
+          </button>
+          <div class="search-body">
+            <button class="header__search-mobile"><i class="btn-search-mobile fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="search-main search-moblie">
+              <input type="search" class="search-inputMoblie" placeholder="Tim kiếm...">
+              <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+          <button class="header__btn-showMenuMb" aria-label="MenuMb">
+            <svg viewBox="0 0 100 100">
+              <path class="line line1"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="mobile-overlay overlay"></div>
+      </div>
+      <div class="header__mid">
+        <div class="header-nav">
+          <div class="menu-nav">
+            <!-- Cấu trúc html menu -->
+            <ul class="menu-list">
+              <li class="menu-item current-menu-item active">
+                <a href="" class="menu-link ">
+                  Về chúng tôi
+                </a>
+              </li>
+              <li class="menu-item dropdown">
+                <a href="" class="menu-link">
+                  Dự án
+                </a>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      Dự án 1
+                    </a>
+                  </li>
+                  <li class="menu-item dropdown">
+                    <a href="" class="menu-link">
+                      Dự án 2
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item current-menu-item">
+                <a href="" class="menu-link">
+                  Hợp tác
+                </a>
+              </li>
+              <li class="menu-item current-menu-item">
+                <a href="" class="menu-link">
+                  Tin tức
+                </a>
+              </li>
+              <li class="menu-item current-menu-item">
+                <a href="" class="menu-link">
+                  Liên hệ
+                </a>
+              </li>
+              <li class="menu-item current-menu-item search-body">
+                <button class="header__search"><i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+                <div class="search-pc search-main">
+                  <input type="search" class="search-inputMoblie" placeholder="Tim kiếm...">
+                  <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main main-detail">
+    <div class="banner banner-contact row mb-56">
+      <div class="banner__img-main">
+          <img src="./assets/images/banner/bannercontact-main.png" alt="">
+      </div>
+      <a href="#" class="imgYou img-decor">
+          <img class="" src="./assets/images/DetailService/you.png" alt="">
+      </a>
+      <div class="banner__top">
+          <h1 class="t-title banner-title">LIÊN HỆ NGAY</h1>
+          <ul class="breadcrumb">
+              <li class="breadcrumb__item"><a href="/">Trang chủ</a></li>
+              <li class="active"><a href="">Liên hệ</a></li>
+          </ul>
+      </div>
+      <div class="banner__body row">
+          <div class="banner__left col col-4">
+
+              <img class="img-banner" src="./assets/images/banner/banner1.png" alt="">
+          </div>
+          <div class="banner__mid col col-4">
+              <button class="btn-down"><i class="fa-solid fa-arrow-down"></i></button>
+          </div>
+          <div class="banner__right col col-4">
+              <img class="img-banner" src="./assets/images/banner/banner2.png" alt="">
+          </div>
+      </div>
+
+
+  </div>
+    <!-- <img class="main-img" src="./assets/images/detail/main.png" alt=""> -->
+    <div class="info__contact row mb-56">
+      <div class="info__contact-left col col-8 ">
+        <div class="info__contact-leftBody">
+          <div class="info__contact-logo">
+            <img src="./assets/images/contact/logocone.png" alt="">
+          </div>
+          <div class="info__contact-body container">
+            <div class="listTitle-used mb-20">
+              <p class="used-title1 t-title-four">LIÊN HỆ NGAY</p>
+              <h1 class="used-title2 t-title-second mb-20">THÔNG TIN LIÊN HỆ</h1>
+            </div>
+            <ul class="info__contact-list ">
+              <li class="info__contact-item ">
+                <div class="info__contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_329_1468)">
+                      <path d="M9 0C5.83717 0 3.19922 2.54777 3.19922 5.80078C3.19922 7.03835 3.5711 8.14191 4.28481 9.17599L8.55608 15.8409C8.76329 16.1649 9.23713 16.1643 9.44392 15.8409L13.7337 9.15332C14.4321 8.16609 14.8008 7.00689 14.8008 5.80078C14.8008 2.60223 12.1986 0 9 0ZM9 8.4375C7.54618 8.4375 6.36328 7.2546 6.36328 5.80078C6.36328 4.34696 7.54618 3.16406 9 3.16406C10.4538 3.16406 11.6367 4.34696 11.6367 5.80078C11.6367 7.2546 10.4538 8.4375 9 8.4375Z" fill="#FFFDF4"/>
+                      <path d="M13.1226 12.1182L10.4672 16.2697C9.77984 17.3413 8.21633 17.3378 7.5323 16.2707L4.87259 12.1193C2.53245 12.6603 1.08984 13.6515 1.08984 14.8359C1.08984 16.8912 5.16544 18 9 18C12.8346 18 16.9102 16.8912 16.9102 14.8359C16.9102 13.6506 15.4656 12.6589 13.1226 12.1182Z" fill="#FFFDF4"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_1468">
+                        <rect width="18" height="18" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="info__contact-detail">
+                  <b>Địa chỉ</b>
+                  <p>324/15 Lý Thường Kiệt, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+                </div>
+              </li>
+              <li class="info__contact-item ">
+                <div class="info__contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M13.9862 12.2688C13.9557 12.1267 13.8767 11.9996 13.7626 11.9095C13.6485 11.8194 13.5066 11.7718 13.3612 11.7751H6.62999C6.48464 11.7718 6.34272 11.8194 6.22865 11.9095C6.11457 11.9996 6.03548 12.1267 6.00499 12.2688L5.05499 16.8001C5.03514 16.8924 5.03645 16.988 5.05884 17.0797C5.08123 17.1714 5.12411 17.2568 5.18425 17.3296C5.24439 17.4024 5.32024 17.4606 5.4061 17.4999C5.49196 17.5391 5.5856 17.5584 5.67999 17.5563H14.3362C14.4306 17.5584 14.5243 17.5391 14.6101 17.4999C14.696 17.4606 14.7718 17.4024 14.832 17.3296C14.8921 17.2568 14.935 17.1714 14.9574 17.0797C14.9798 16.988 14.9811 16.8924 14.9612 16.8001L13.9862 12.2688Z" fill="#FFFDF4"/>
+                    <path d="M17.4 6.875H2.6C2.0762 6.875 1.57385 7.08308 1.20346 7.45346C0.83308 7.82385 0.625 8.3262 0.625 8.85V13.75C0.625 13.9158 0.690848 14.0747 0.808058 14.1919C0.925268 14.3092 1.08424 14.375 1.25 14.375H4.425L5 11.1375C5.02662 10.9919 5.10405 10.8605 5.21851 10.7666C5.33296 10.6728 5.47701 10.6226 5.625 10.625H14.375C14.523 10.6226 14.667 10.6728 14.7815 10.7666C14.8959 10.8605 14.9734 10.9919 15 11.1375L15.575 14.375H18.75C18.9158 14.375 19.0747 14.3092 19.1919 14.1919C19.3092 14.0747 19.375 13.9158 19.375 13.75V8.85C19.375 8.3262 19.1669 7.82385 18.7965 7.45346C18.4262 7.08308 17.9238 6.875 17.4 6.875Z" fill="#FFFDF4"/>
+                    <path d="M15 3.125C15 2.95924 14.9342 2.80027 14.8169 2.68306C14.6997 2.56585 14.5408 2.5 14.375 2.5H5.625C5.45924 2.5 5.30027 2.56585 5.18306 2.68306C5.06585 2.80027 5 2.95924 5 3.125V6.25H15V3.125Z" fill="#FFFDF4"/>
+                  </svg>
+                </div>
+                <div class="info__contact-detail">
+                  <b>MST</b>
+                  <p>0317292249</p>
+                </div>
+              </li>
+              <li class="info__contact-item ">
+                <div class="info__contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_329_1480)">
+                      <path d="M17.5088 13.2102L14.9968 10.6982C14.0997 9.80111 12.5746 10.16 12.2157 11.3262C11.9466 12.1337 11.0495 12.5822 10.242 12.4028C8.44779 11.9542 6.02555 9.62168 5.57699 7.73772C5.30785 6.93027 5.84612 6.03314 6.65354 5.76404C7.8198 5.40519 8.17865 3.88007 7.28153 2.98295L4.76957 0.470991C4.05187 -0.156997 2.97532 -0.156997 2.34733 0.470991L0.642792 2.17553C-1.06175 3.96978 0.822217 8.72455 5.03871 12.941C9.25521 17.1575 14.01 19.1313 15.8042 17.337L17.5088 15.6324C18.1368 14.9147 18.1368 13.8382 17.5088 13.2102Z" fill="#FFFDF4"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_1480">
+                        <rect width="18" height="18" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="info__contact-detail">
+                  <b>Hotline</b>
+                  <p>(+84) 981055524</p>
+                </div>
+              </li>
+              <li class="info__contact-item ">
+                <div class="info__contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_329_1498)">
+                      <path d="M17.8418 3.57617L12.3828 9.00004L17.8418 14.4239C17.9405 14.2177 18.0004 13.9896 18.0004 13.7461V4.25395C18.0004 4.01042 17.9405 3.78243 17.8418 3.57617Z" fill="#FFFDF4"/>
+                      <path d="M16.418 2.67188H1.58207C1.33855 2.67188 1.11056 2.73175 0.904297 2.83043L7.88151 9.77249C8.49843 10.3894 9.50165 10.3894 10.1186 9.77249L17.0958 2.83043C16.8895 2.73175 16.6615 2.67188 16.418 2.67188Z" fill="#FFFDF4"/>
+                      <path d="M0.158555 3.57617C0.0598711 3.78243 0 4.01042 0 4.25395V13.7461C0 13.9897 0.0598711 14.2177 0.158555 14.4239L5.61758 9.00004L0.158555 3.57617Z" fill="#FFFDF4"/>
+                      <path d="M11.6368 9.74573L10.8643 10.5182C9.83634 11.5461 8.16371 11.5461 7.13578 10.5182L6.36332 9.74573L0.904297 15.1696C1.11056 15.2683 1.33855 15.3282 1.58207 15.3282H16.418C16.6615 15.3282 16.8895 15.2683 17.0958 15.1696L11.6368 9.74573Z" fill="#FFFDF4"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_1498">
+                        <rect width="18" height="18" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="info__contact-detail">
+                  <b>Email</b>
+                  <p>hr@1steper.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="info__contact-right col col-4">
+        <img src="./assets/images/contact/contact.png" alt="">
+      </div>
+    </div>
+    <div class="contact mb-56">
+      <div class="container">
+        <div class="listTitle-used mb-10">
+          <a href="#" class="detail-heart detail-imgUsed">
+            <img class="" src="./assets/images/detail/heart.png" alt="">
+        </a>
+          <p class="used-title1 t-title-four">TRỞ THÀNH ĐỐI TÁC VỚI CHÚNG TÔI NGAY</p>
+          <h1 class="used-title2 t-title-second mb-20">LIÊN HỆ NGAY</h1>
+          <a href="#" class="detail-like detail-imgUsed">
+            <img class="" src="./assets/images/detail/like.png" alt="">
+        </a>
+        </div>
+        <div class="form__contact row">
+          <div class="form__contact-name col col-6">
+            <input type="text" placeholder="Họ và tên">
+          </div>
+          <div class="form__contact-email col col-6">
+            <input type="email" placeholder="Email">
+          </div>
+          <div class="form__contact-tel col col-6">
+            <input type="tel" placeholder="Số điện thoại" required minlength="7" maxlength="11">
+          </div>
+          <div class="contactService col col-6 ">
+            <div class="contactService__current" tabindex="1">
+               <div class="contactService__value">
+                  <input class="contactService__input" type="radio" id="contactService1" value="1" name="s" checked="checked" />
+                  <span class="contactService__input-text">Dịch vụ</span>
+               </div>
+               <div class="contactService__value">
+                  <input class="contactService__input" type="radio" id="contactService2" value="2" name="s" />
+                  <span class="contactService__input-text">Dịch vụ 1</span>
+               </div>
+            </div>
+            <ul class="contactService__list col">
+               <li><label class="contactService__option" for="contactService1" aria-hidden="aria-hidden">Dịch vụ</label></li>
+               <li><label class="contactService__option" for="contactService2" aria-hidden="aria-hidden">Dịch vụ 1</label></li>
+            </ul>
+         </div>
+          <div class="form__contact-text col">
+           <textarea placeholder="Lời nhắn của bạn đến 1STEPER..." name="" id="" cols="30" rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-56">
+      <div class=" detail-poster">
+        <a href="#" class="imgYou img-decorUsed">
+          <img class="" src="./assets/images/detail/you.png" alt="">
+        </a>
+
+        <a href="#" class="imgshareBig img-decorUsed">
+          <img class="" src="./assets/images/detail/share.png" alt="">
+        </a>
+        <div class="poster mb-56">
+          <div class="slogan">
+            <div class="slogan__img">
+              <img src="./assets/images/main/logoposter.png" alt="">
+            </div>
+            <h3 class="t-title-third">Hãy để chúng tôi đồng hành
+              cùng những dự án của bạn</h3>
+          </div>
+          <div class="poster__right">
+            <div class="poster__img ">
+              <div class="btncol">
+                <button class="btn-post btn-post1">KHÁM PHÁ THÊM </button>
+              </div>
+              <div class="poster-human ">
+                <img src="./assets/images/main/human.png" alt="">
+              </div>
+              <div class="poster-line"></div>
+              <div class="btncol">
+                <button class="btn-post btn-post2">LIÊN HỆ NGAY </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="imgshareSmall img-decorUsed">
+          <img class="" src="./assets/images/detail/share.png" alt="">
+        </a>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <div class="container ">
+      <div class="footer-main row">
+        <div class="footer__left col col-4">
+          <div class="footer__left-top mb-40">
+            <div class="footer__left-contact">
+              <p>hr@1steper.com</p>
+              <p>(+84) 981055524</p>
+            </div>
+            <a href="" class="arrowup">
+              <img src="./assets/images/footer/up-right-arrow 1.png" alt="">
+            </a>
+          </div>
+          <p class="t-16 mb-10">Theo dõi chúng tôi</p>
+          <div class="social mb-10">
+            <a href="#" class="social-item">
+              <img src="./assets/images/header/fb.png" alt="" class="social-img">
+            </a>
+            <a href="#" class="social-item">
+              <img src="./assets/images/header/you.png" alt="" class="social-img">
+            </a>
+            <a href="#" class="social-item">
+              <img src="./assets/images/header/inta.png" alt="" class="social-img">
+            </a>
+          </div>
+          <a href="#" class="fanpage">
+            <img src="./assets/images/footer/fanpageft.png" alt="">
+          </a>
+        </div>
+        <div class="footer__mid col col-4">
+          <h3 class="t-16 mb-10">Thông tin công ty</h3>
+          <ul class="mb-56">
+            <li class="mb-10"><i class="fa-solid fa-location-dot"></i>
+              <p class="t-14">324/15 Lý Thường Kiệt, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+            </li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M12.5 3.99992H14.705L12 1.29492V3.49992C12 3.63253 12.0527 3.75971 12.1464 3.85348C12.2402 3.94724 12.3674 3.99992 12.5 3.99992Z"
+                  fill="#F9FFFC" />
+                <path
+                  d="M12.5 5C12.1022 5 11.7206 4.84196 11.4393 4.56066C11.158 4.27936 11 3.89782 11 3.5V1H5.5C5.10218 1 4.72064 1.15804 4.43934 1.43934C4.15804 1.72064 4 2.10218 4 2.5V6.1C5.11289 5.87239 6.27012 6.03051 7.28116 6.54833C8.29219 7.06615 9.09678 7.91281 9.56244 8.9489C10.0281 9.985 10.1271 11.1488 9.84309 12.2486C9.5591 13.3485 8.90906 14.3189 8 15H13.5C13.8978 15 14.2794 14.842 14.5607 14.5607C14.842 14.2794 15 13.8978 15 13.5V5H12.5ZM9.5 5H6.5C6.36739 5 6.24021 4.94732 6.14645 4.85355C6.05268 4.75979 6 4.63261 6 4.5C6 4.36739 6.05268 4.24021 6.14645 4.14645C6.24021 4.05268 6.36739 4 6.5 4H9.5C9.63261 4 9.75979 4.05268 9.85355 4.14645C9.94732 4.24021 10 4.36739 10 4.5C10 4.63261 9.94732 4.75979 9.85355 4.85355C9.75979 4.94732 9.63261 5 9.5 5ZM12.5 12.5H11.5C11.3674 12.5 11.2402 12.4473 11.1464 12.3536C11.0527 12.2598 11 12.1326 11 12C11 11.8674 11.0527 11.7402 11.1464 11.6464C11.2402 11.5527 11.3674 11.5 11.5 11.5H12.5C12.6326 11.5 12.7598 11.5527 12.8536 11.6464C12.9473 11.7402 13 11.8674 13 12C13 12.1326 12.9473 12.2598 12.8536 12.3536C12.7598 12.4473 12.6326 12.5 12.5 12.5ZM12.5 10H11.5C11.3674 10 11.2402 9.94732 11.1464 9.85355C11.0527 9.75979 11 9.63261 11 9.5C11 9.36739 11.0527 9.24021 11.1464 9.14645C11.2402 9.05268 11.3674 9 11.5 9H12.5C12.6326 9 12.7598 9.05268 12.8536 9.14645C12.9473 9.24021 13 9.36739 13 9.5C13 9.63261 12.9473 9.75979 12.8536 9.85355C12.7598 9.94732 12.6326 10 12.5 10ZM12.5 7.5H10.5C10.3674 7.5 10.2402 7.44732 10.1464 7.35355C10.0527 7.25979 10 7.13261 10 7C10 6.86739 10.0527 6.74021 10.1464 6.64645C10.2402 6.55268 10.3674 6.5 10.5 6.5H12.5C12.6326 6.5 12.7598 6.55268 12.8536 6.64645C12.9473 6.74021 13 6.86739 13 7C13 7.13261 12.9473 7.25979 12.8536 7.35355C12.7598 7.44732 12.6326 7.5 12.5 7.5Z"
+                  fill="#F9FFFC" />
+                <path
+                  d="M5 7C4.20888 7 3.43552 7.2346 2.77772 7.67412C2.11992 8.11365 1.60723 8.73836 1.30448 9.46927C1.00173 10.2002 0.92252 11.0044 1.07686 11.7804C1.2312 12.5563 1.61216 13.269 2.17157 13.8284C2.73098 14.3878 3.44372 14.7688 4.21964 14.9231C4.99556 15.0775 5.79983 14.9983 6.53074 14.6955C7.26164 14.3928 7.88635 13.8801 8.32588 13.2223C8.76541 12.5645 9 11.7911 9 11C9 9.93913 8.57857 8.92172 7.82843 8.17157C7.07828 7.42143 6.06087 7 5 7ZM4 9.5C4.09889 9.5 4.19556 9.52932 4.27779 9.58426C4.36001 9.63921 4.4241 9.7173 4.46194 9.80866C4.49979 9.90002 4.50969 10.0006 4.49039 10.0975C4.4711 10.1945 4.42348 10.2836 4.35356 10.3536C4.28363 10.4235 4.19454 10.4711 4.09755 10.4904C4.00056 10.5097 3.90002 10.4998 3.80866 10.4619C3.7173 10.4241 3.63921 10.36 3.58427 10.2778C3.52933 10.1956 3.5 10.0989 3.5 10C3.5 9.86739 3.55268 9.74021 3.64645 9.64645C3.74022 9.55268 3.86739 9.5 4 9.5ZM6 12.5C5.90111 12.5 5.80444 12.4707 5.72222 12.4157C5.63999 12.3608 5.57591 12.2827 5.53806 12.1913C5.50022 12.1 5.49032 11.9994 5.50961 11.9025C5.5289 11.8055 5.57652 11.7164 5.64645 11.6464C5.71637 11.5765 5.80547 11.5289 5.90246 11.5096C5.99945 11.4903 6.09998 11.5002 6.19134 11.5381C6.28271 11.5759 6.3608 11.64 6.41574 11.7222C6.47068 11.8044 6.5 11.9011 6.5 12C6.5 12.1326 6.44732 12.2598 6.35356 12.3536C6.25979 12.4473 6.13261 12.5 6 12.5ZM6.355 10.355L4.355 12.355C4.30852 12.4019 4.25322 12.4391 4.19229 12.4644C4.13136 12.4898 4.06601 12.5029 4 12.5029C3.934 12.5029 3.86864 12.4898 3.80771 12.4644C3.74678 12.4391 3.69148 12.4019 3.645 12.355C3.59814 12.3085 3.56094 12.2532 3.53556 12.1923C3.51017 12.1314 3.4971 12.066 3.4971 12C3.4971 11.934 3.51017 11.8686 3.53556 11.8077C3.56094 11.7468 3.59814 11.6915 3.645 11.645L5.645 9.645C5.73915 9.55085 5.86685 9.49795 6 9.49795C6.13315 9.49795 6.26085 9.55085 6.355 9.645C6.44915 9.73915 6.50205 9.86685 6.50205 10C6.50205 10.1332 6.44915 10.2608 6.355 10.355Z"
+                  fill="#F9FFFC" />
+              </svg>
+              <p class="t-14">0903 380 228</p>
+            </li>
+          </ul>
+          <a href="" class="footer__logo">
+            <img src="./assets/images/footer/logoft.png" alt="">
+          </a>
+        </div>
+        <div class="footer__right col col-4">
+          <h3 class="t-16 mb-10">Liên kết nhanh</h3>
+          <ul class="mb-56">
+            <li class="t-14"><a href="">Trang chủ</a></li>
+            <li class="t-14"><a href="">Về chúng tôi</a></li>
+            <li class="t-14"><a href="">Dự án</a></li>
+            <li class="t-14"><a href="">Hợp tác</a></li>
+            <li class="t-14"><a href="">Tuyển dụng</a></li>
+            <li class="t-14"><a href="">Tin tức</a></li>
+          </ul>
+          <div class="footer__forms">
+            <h3 class="t-16 mb-10">Đăng ký nhận tin</h3>
+            <div class="footer__form">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Nhập E-mail của bạn">
+              <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="copy__right container">
+      <div class="mona-design">
+        <div class="mona-detail">
+          Thiết kế bởi
+          <a href="#">
+            <img src="./assets/images/footer/logomona.png" alt="">
+          </a>
+          <span>MONA .Media</span>
+        </div>
+        <span class="line1">/</span>
+        <div class="mona-share">
+          <span>Website</span>
+          <a href="#">
+            <img src="./assets/images/footer/share.png" alt="">
+
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="back-to-top backToTop button-pulse">
+    <i class="fa-solid fa-up-long"></i>
+  </div>
+  <script src="./js/library/jquery/jquery.js"></script>
+  <script src="./js/library/gsap/gsap.min.js"></script>
+  <script src="./js/library/gsap/ScrollTrigger.min.js"></script>
+  <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/library/aos/aos.js"></script>
+  <script src="./js/library/select2/select2.min.js"></script>
+  <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+  <script src="./js/library/jquery/jquery-migrate.js"></script>
+  <script src="./js/library/isotope/isotope.pkgd.min.js"></script>
+  <script src="./js/library/datetime/moment.min.js"></script>
+  <script src="./js/library/datetime/daterangepicker.min.js"></script>
+  <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="./js/library/fancybox/fancybox.umd.js"></script>
+  <script src="./js/library/owlcarousel/owl.carousel.js"></script>
+  <script src="./assets/font/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/js/all.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+
+</body>
+
+</html>

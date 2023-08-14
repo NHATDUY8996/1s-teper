@@ -1,0 +1,60 @@
+.page-numbers {
+    @include flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    margin-top: 1.6rem;
+
+    >li {
+        &:not(:first-child) {
+            margin-left: 8px;
+        }
+
+        &>.page-numbers {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 100rem;
+            @include mid-flex;
+            background-color: transparent;
+            border: 1px solid $color-text-third;
+            cursor: pointer;
+            overflow: hidden;
+            color: $color-text-third;
+            font-size: 1.4rem;
+            position: relative;
+            @include affter($color-pri);
+
+            &:after {
+                z-index: -1;
+            }
+
+            @include hover {
+                &:not(.dot) {
+                    color: white;
+
+                    &::after {
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.current {
+                color: white;
+                &::after {
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+            &.dot {
+                background-color: transparent;
+            }
+
+            i {
+                font-weight: 400;
+            }
+        }
+    }
+}

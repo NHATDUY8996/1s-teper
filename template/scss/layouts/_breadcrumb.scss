@@ -1,0 +1,25 @@
+.breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 2rem 0;
+  li {
+    display: inline-block;
+    &.active {
+      a{
+        font-weight: 700;
+      }
+    }
+    &:not(:last-child){
+      &::after{
+        content: ">>";
+        margin: 0 5px;
+        color: $color-pri;
+      }
+    }
+    a{
+      color: $color-pri;
+      font-weight: 500;
+    }
+  }
+}

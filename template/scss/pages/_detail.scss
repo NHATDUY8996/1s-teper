@@ -1,0 +1,105 @@
+.main-detail{
+  // position: relative;
+  // .main-img{
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   margin: auto;
+  //   object-fit: fill;
+  // }
+  background-image: $imgmain-detail;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.detail-poster{
+  position: relative;
+  .detail-you,
+  .imgYou{
+    left: -15rem;
+    top: -1rem;
+  }
+  .imgshare{
+    &Small{
+      left: -8rem;
+      bottom:-2rem;
+    }
+    &Big{
+      right: -15rem;
+      top: -1rem;
+    }
+  }
+}
+.detail-body{
+  .detail-new{
+    left: -15rem;
+    bottom: -1rem;
+  }
+  
+  .detail-like{
+    right: -10rem;
+    top: -1rem;
+  }
+  .detaillist-text{
+    width: 80%;
+    margin: auto;
+  }
+  .detail-title{
+    position: relative;
+    text-align: center;
+
+    .t-title-second{
+      width: 80%;
+      margin: auto;
+      @include max(800px){
+        width: 100%;
+      }
+    }
+    .t-title-four{
+      margin: 1rem 0;
+    }
+  }
+  .detail-img{
+    @include mid-flex;
+    border-radius: 4rem;
+    margin: 2rem auto;
+    overflow: hidden;
+    img{
+      transition: .3s ease;
+      &:hover{
+      transition: .3s ease;
+      transform: scale(1.1);
+      }
+    }
+  }
+
+  .detail-img2,
+  .detail-img3{
+    width: 80%;
+  }
+  .detail-social{
+    @include mid-flex;
+    .detail-text{
+      @include fz-18;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.18px;
+margin-right: 1rem;
+    }
+  }
+}
+.Post{
+  position: relative;
+  .swiper-button-next{
+    right: -1rem;
+  }
+   .swiper-button-prev{
+    left: -1rem;
+   }
+}

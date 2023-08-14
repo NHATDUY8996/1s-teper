@@ -1,0 +1,270 @@
+.header {
+    height: var(--size-hd);
+    // border-bottom: 1px solid $color-border-01;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 150%;
+    transition: 0.3s ease-in-out;
+    z-index: 50;
+    background-color: $color-white;
+    font-family: 'SVN-Poppins';
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    @include max(1200px) {
+    transition: 0.3s ease-in-out;
+    height: var(--pd-sc);
+    .header__logo {
+        img {
+            width: 80%;
+            transition: .5s ease;
+        }
+    }
+    }
+
+    &.sticky {
+    transition: 0.3s ease-in-out;
+        height: var(--pd-sc);
+        .header__logo {
+            img {
+                width: 80%;
+                transition: .5s ease;
+            }
+        }
+    }
+
+    .custom-logo-link {
+        @include flex;
+        @include transitionRe;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+
+
+}
+
+.header__top {
+    @include between-flex;
+    padding: 1rem 0;
+    height: 60%;
+
+    @include max(1200px) {
+        height: 100%;
+
+        .social {
+            display: none;
+        }
+    }
+}
+
+.header__list-btn {
+    @include mid-flex;
+    gap: 1rem;
+
+    .header__btn-showMenuMb {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+        @include min(1201px){
+            display: none;
+        }
+        svg{
+            width: 4rem;
+            height: 4rem;
+        }
+        .line {
+            fill: none;
+            stroke: $color-pri;
+            stroke-width: 6;
+            transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &1 {
+                stroke-dasharray: 20 207;
+                stroke-width: 6;
+                stroke-dashoffset: 187;
+            }
+
+            &2 {
+                stroke-dasharray: 40 60;
+                stroke-width: 6;
+                stroke-dashoffset: 181;
+            }
+
+            &3 {
+                stroke-dasharray: 60 207;
+                stroke-width: 6;
+            }
+        }
+
+        &.opened {
+            .line {
+                &1 {
+                    stroke-dasharray: 90 207;
+                    stroke-dashoffset: -134;
+                    stroke-width: 6;
+                }
+
+                &2 {
+                    stroke-dasharray: 1 60;
+                    stroke-dashoffset: -30;
+                    stroke-width: 6;
+                }
+
+                &3 {
+                    stroke-dasharray: 90 207;
+                    stroke-dashoffset: -134;
+                    stroke-width: 6;
+                }
+            }
+        }
+    }
+
+
+
+    .header__search-mobile {
+        position: relative;
+        width: 4.7rem;
+        height: 4.7rem;
+        @include fz-20;
+        border-radius: 50%;
+        transition: .4s ease;
+
+        @include min(1201px) {
+            display: none;
+        }
+
+        svg {
+            color: $color-pri;
+            transition: .4s ease;
+
+        }
+
+    }
+
+    .header__btn-flag {
+        background-color: $color-text-third;
+        color: $color-white;
+        line-height: 120%;
+        font-size: 1.4rem;
+        border-radius: 100rem;
+        height: 3.6rem;
+        padding: .8rem 1rem;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            height: 1rem;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            background-color: $color-pri;
+            .header__fag-list {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                transition: 0.4s ease-in-out;
+            }
+
+            .header__flag-main {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .header__flag-img {
+            height: 2.2rem;
+            width: 2.2rem;
+            border-radius: 50%;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+
+        .header__flag-main {
+            @include mid-flex;
+            gap: 1rem;
+            font-family: 'Poppins';
+        }
+
+        .header__fag-list {
+            z-index: 101;
+            font-family: 'Poppins';
+            position: absolute;
+            background-color: $color-text-third;
+            top: calc(100% + 1rem);
+            right: 0;
+            left: 0;
+            margin: auto;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 1rem;
+            transform: translateY(-1.4rem);
+            transition: 0.4s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            .header__flag-item {
+                @include mid-flex;
+                padding: 1rem 0;
+                gap: 1rem;
+                position: relative;
+                transition: .3s ease;
+                border-bottom: 1px solid $color-opa-white-08;
+
+                &:hover {
+                    background-color: $color-pri;
+                    transition: .3s ease;
+
+                    &:first-child {
+                        border-top-left-radius: 1rem;
+                        border-top-right-radius: 1rem;
+                    }
+
+                    &:last-child {
+                        border-bottom-left-radius: 1rem;
+                        border-bottom-right-radius: 1rem;
+                    }
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.header__logo {
+    @include mid-flex;
+    width: 13.5rem;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: .5s ease;
+
+    }
+}

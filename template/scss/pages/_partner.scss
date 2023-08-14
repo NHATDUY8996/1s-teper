@@ -1,0 +1,159 @@
+.partnerbtn{
+  position: relative;
+  @include mid-flex;
+  height: auto;
+  gap: 3rem;
+  margin: 2rem;
+  .swiper-button-prev{
+    position: relative;
+
+  }
+  .swiper-button-next{
+    position: relative;
+
+  }
+}
+.partnerlist{
+  margin: 3rem 0;
+}
+.partnerSwiper{
+  overflow: visible;
+  margin: auto;
+  width: 80%;
+  .swiper-wrapper{
+    width: 100%;
+    .swiper-slide{
+      @include mid-flex;
+      width: 100%;
+      padding: 2rem 1rem;
+      border: 1px solid $color-black;
+      border-radius: 1rem;
+      img{
+        width: 80%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.form__contact{
+  width: 70%;
+  margin: auto;
+  @include max(600px){
+    width: 95%;
+  }
+  textarea,
+  input{
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    outline: none;
+    border: none;
+    background-color: $color-five;
+    border-radius: .8rem;
+    @include fz-16;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: 'SVN-Poppins';
+  }
+  .form__contact-name,
+  .form__contact-email,
+  .form__contact-tel,
+  .form__contact-text,
+  .contactService{
+    @include max(600px){
+    width: 100%;
+    }
+  }
+  .contactService {
+    position: relative;
+    display: block;
+    z-index: 3;
+    color: $color-text-four;
+    border-radius: .8rem;
+    &__current{
+      position: relative;
+      cursor: pointer;
+      outline: none;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: .5rem solid ;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 1.5rem;
+        transform: rotateZ(45deg);
+        transition: 0.2s ease;
+        border-color: transparent $color-black $color-black transparent;
+        
+      }
+      &:focus{
+        &::after{
+    transform: rotate(225deg);
+        }
+      }
+      .contactService__value {
+        position: relative;
+        display: flex;
+        input {
+          display: none;
+          &:checked+span {
+            display: block;
+          }
+        }
+        span {
+          display: none;
+          width: 100%;
+          margin: 0;
+          padding: 1.2rem 1.6rem;
+          border-radius: .8rem;
+          background-color: $color-five;
+        }
+      }
+    }
+    &__list{
+      position: absolute;
+      top: calc(100% + .1rem);
+      left: 0;
+      width: 100%;
+      margin: auto;
+      list-style: none;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-1rem);
+      transition: .4s ease-in-out;
+      li {
+        &:first-child{
+
+        border-top: 1px solid $color-white;
+        }
+        border-bottom: 1px solid $color-white;
+        border-left: 1px solid $color-white;
+        border-right: 1px solid $color-white;
+        .contactService__option {
+          display: block;
+          padding: 1rem;
+          background-color: $color-five;
+          color: $color-text-four;
+          transition: .3s ease;
+          cursor: pointer;
+          &:focus,
+          &:hover{
+            color: $color-pri;
+          transition: .3s ease;
+          background-color: $color-white;
+          }
+        }
+      }
+    }
+    .contactService__current:focus+.contactService__list {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition: .4s ease-in-out;
+    }
+  }
+}
+

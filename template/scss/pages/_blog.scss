@@ -1,0 +1,8 @@
+.hello{ 
+  background-color: red;
+  &-blue{
+    background-color: blue;
+  }
+  @include mid();
+  @include full-size();
+}
