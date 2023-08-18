@@ -1,0 +1,105 @@
+.achievementSwiper{
+  padding: 2rem 1rem;
+  .swiper-slide{
+    margin: auto;
+    img{
+      width: 95%;
+
+    }
+    &-active{
+      img{
+        width: 100%;
+      }
+    }
+    &-next{
+      img{
+        transform: translateX(1rem);
+      }
+    }
+
+  }
+}
+.slide-achievement{
+  .slide-achievement-top{
+
+    .slide-achievement-topLeft{
+      @include max(728px){
+      display: none;
+      }
+    }
+    .slide-achievement-topRight{
+      position: relative;
+      @include mid-flex;
+      flex-direction: column;
+      @include max(728px){
+      width: 100%;
+      }
+      .listTitle-used{
+        text-align: left;
+      }
+      .slide-achievement-text{
+        margin: 0 1rem;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        line-height: 200%;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .swiper-button-nextAchievement{
+        top: calc(100% + 3rem);
+        left: 7rem;
+        right: auto;
+      }
+      .swiper-button-prevAchievement{
+        top: calc(100% + 3rem);
+        left: 2rem;
+        right: auto;
+      }
+    }
+  }
+  .achievementSwiper{
+    .swiper-slide{
+      @include imgPd(40, 200);
+      border-radius: 2.4rem;
+      img{
+        @include imgCover;
+      }
+    }
+  }
+}
+.mainProject{
+  position: relative;
+  .imgmainProject{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -4;
+    img{
+      width: 70%;
+      object-fit: cover;
+    }
+  }
+}
+.slide-achievement-top{
+  position: relative;
+  .slide-achievementhide{
+    position: absolute;
+    width: calc(80% + $halfremainder);
+    right: calc(-2*$halfremainder);
+    left: auto;
+    top: -5%;
+    height: 150%;
+    z-index: -1;
+    background-color: $color-five;
+    border-top-left-radius: 100rem;
+    border-bottom-left-radius: 100rem;
+    @include max(1259px){
+      width: 100%;
+      right: 0;
+      transform: translateX(10%);
+    }
+  }
+}

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <div class="container">
             <div class="header__top">
@@ -39,7 +40,7 @@
                         <li class="menu-item dropdown">
 
                             <a href="#" class="menu-link">
-                                <i class="fa-solid fa-house"></i>
+                                <i class="fa-solid fa-diagram-project"></i>
                                 Dự án
                                 <i class="fa-solid fa-chevron-down"></i>
                             </a>
@@ -167,13 +168,15 @@
                             <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
                     </div>
-                    <button class="header__btn-showMenuMb"  aria-label="MenuMb">
-                        <svg  viewBox="0 0 100 100">
-                          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                          <path class="line line2" d="M 20,50 H 80" />
-                          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    <button class="header__btn-showMenuMb" aria-label="MenuMb">
+                        <svg viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                         </svg>
-                      </button>
+                    </button>
 
                 </div>
                 <div class="mobile-overlay overlay"></div>
@@ -183,7 +186,7 @@
                     <div class="menu-nav">
                         <!-- Cấu trúc html menu -->
                         <ul class="menu-list">
-                            <li class="menu-item current-menu-item active">
+                            <li class="menu-item current-menu-item">
                                 <a href="" class="menu-link ">
                                     Về chúng tôi
                                 </a>
@@ -205,286 +208,347 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-item current-menu-item">
+                            <li class="menu-item">
                                 <a href="" class="menu-link">
                                     Hợp tác
                                 </a>
                             </li>
-                            <li class="menu-item current-menu-item">
+                            <li class="menu-item">
                                 <a href="" class="menu-link">
                                     Tin tức
                                 </a>
                             </li>
-                            <li class="menu-item current-menu-item">
+                            <li class="menu-item">
                                 <a href="" class="menu-link">
                                     Liên hệ
                                 </a>
                             </li>
-                            <li class="menu-item current-menu-item search-body">
-                                <button class="header__search"><i class="fa-solid fa-magnifying-glass"></i>
 
-                                </button>
-                                <div class="search-pc search-main">
-                                    <input type="search" class="search-inputMoblie" placeholder="Tim kiếm...">
-                                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                                </div>
-                            </li>
                         </ul>
+                        <div class="search-body">
+                            <button class="header__search"><i class="fa-solid fa-magnifying-glass"></i>
+
+                            </button>
+                            <div class="search-pc search-main">
+                                <input type="search" class="search-inputMoblie" placeholder="Tim kiếm...">
+                                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main main-detail">
+    <!-- header -->
+    <main class="main main-detail mainDetailPost">
         <!-- <img class="main-img" src="./assets/images/detail/main.png" alt=""> -->
-        <div class="container">
-            <ul class="breadcrumb">
-                <li class="breadcrumb__item"><a href="/">Trang chủ</a></li>
-                <li class="breadcrumb__item"><a href="/">Tin tức</a></li>
-                <li class="active"><a href="">Tranh cãi về công nghệ AI trong sáng tạo nghệ thuật</a></li>
-            </ul>
-        </div>
-        <div class="container mb-56">
-            <div class="detail-body">
-                <div class="detail-title">
-                    <a href="#" class="detail-new detail-imgUsed">
-                    <img class="" src="./assets/images/detail/new.png" alt="">
-                    </a>
-                    <h1 class="t-title-second">Tranh cãi về công nghệ AI trong sáng tạo nghệ thuật</h1>
-                    <h3 class="t-title-four">12/07/2023</h3>
-                    <a href="#" class="detail-like detail-imgUsed">
-                        <img class="" src="./assets/images/detail/like.png" alt="">
-                    </a>
-                </div>
-                <a href="#" class="detail-img detail-img1">
-                    <img src="./assets/images/detail/detailPost.png" alt="">
-                </a>
-                <div class="detaillist-text">
-                    <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục
-                        vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ
-                        những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản mẫu
-                        văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học văn
-                        phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960 nhờ
-                        việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng trong
-                        các ứng dụng dàn trang, như Aldus PageMaker.</p>
-                    <br>
-                    <p> Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản
-                        trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn bản
-                        chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến văn bản giống thật hơn, bình
-                        thường hơn. Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử dụng Lorem Ipsum
-                        làm đoạn văn bản giả, và nếu bạn thử tìm các đoạn "Lorem ipsum" trên mạng thì sẽ khám phá ra
-                        nhiều trang web hiện vẫn đang trong quá trình xây dựng. Có nhiều phiên bản khác nhau đã xuất
-                        hiện, đôi khi do vô tình ứng dụng dàn trang, như Aldus PageMaker.</p>
-                </div>
-                <a href="#" class="detail-img detail-img2">
-                    <img src="./assets/images/detail/detailPost1.png" alt="">
-                </a>
-                <a href="#" class="detail-img detail-img3">
-                    <img src="./assets/images/detail/detailService2.png" alt="">
-                </a>
-                <div class="detail-social">
-                    <p class="detail-text">Chia sẻ bài viết</p>
-                    <div class="social">
-                        <a href="#" class="social-item">
-                            <img src="./assets/images/header/fb.png" alt="" class="social-img">
-                        </a>
-                        <a href="#" class="social-item">
-                            <img src="./assets/images/header/you.png" alt="" class="social-img">
-                        </a>
-                        <a href="#" class="social-item">
-                            <img src="./assets/images/header/inta.png" alt="" class="social-img">
-                        </a>
-                    </div>
-                </div>
+        <section class="section-breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb__item"><a href="/">Trang chủ</a></li>
+                    <li class="breadcrumb__item"><a href="/">Tin tức</a></li>
+                    <li class="active"><a href="">Tranh cãi về công nghệ AI trong sáng tạo nghệ thuật</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="container Post">
-          <div class="listTitle-used mb-20">
-            <p class="used-title1 t-title-four">TIN TỨC ĐƯỢC CẬP NHẬT TỪ 1STEPER</p>
-            <h1 class="used-title2 t-title-second mb-20">TIN TỨC LIÊN QUAN</h1>
-        </div>
-          <div class="swiper cardSwiper mb-56">
-            <div class="swiper-wrapper card__list">
-                <div class="swiper-slide card__item">
-                    <a class="card__link-img" href="">
-                        <img src="./assets/images/card/card1.png" alt="" class="card__img">
-                    </a>
-                    <div class="card__body">
-                        <div class="card__time">
-                            <div class="card__time-day">15</div>
-                            <div class="card__time-month">TH 3</div>
-                        </div>
-                        <div class="card__body-top">
-                            <div class="card__body-name"><i class="fa-solid fa-user"></i>
-                                <span class="card-text">Thanh Nguyễn</span>
-                            </div>
-                            <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
-                                <span>AI</span>
-                            </div>
-                        </div>
-                        <div class="card__body-detail">
-                            <h1 class="card__body-title t-ellipsis">Tranh cãi về công nghệ AI trong sáng tạo
-                                nghệ
-                                thuật</h1>
-                            <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
-                                eu
-                                enim
-                                pellentesque libero. Sit elit.</p>
-                        </div>
-                        <div class="card__body-line"></div>
-                        <a href="#" class="card__body-more">
-                            <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
+        </section>
+        <!-- detail text -->
+        <section class="section-detail-body">
+            <div class="container mb-56">
+                <div class="detail-body">
+                    <div class="detail-title">
+                        <a href="#" class="detail-new detail-imgUsed">
+                            <img class="" src="./assets/images/detail/new.png" alt="">
+                        </a>
+                        <h3 class="t-title-second">Tranh cãi về công nghệ AI trong sáng tạo nghệ thuật</h3>
+                        <h3 class="t-title-four">12/07/2023</h3>
+                        <a href="#" class="detail-like detail-imgUsed">
+                            <img class="" src="./assets/images/detail/like.png" alt="">
                         </a>
                     </div>
-                </div>
-                <div class="swiper-slide card__item">
-                    <a class="card__link-img" href="">
-                        <img src="./assets/images/card/card2.png" alt="" class="card__img">
+                    <a href="#" class="detail-img detail-img1">
+                        <img src="./assets/images/detail/detailPost.png" alt="">
                     </a>
-                    <div class="card__body">
-                        <div class="card__time">
-                            <div class="card__time-day">15</div>
-                            <div class="card__time-month">TH 3</div>
-                        </div>
-                        <div class="card__body-top">
-                            <div class="card__body-name"><i class="fa-solid fa-user"></i>
-                                <span class="card-text">Thanh Nguyễn</span>
-                            </div>
-                            <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
-                                <span>AI</span>
-                            </div>
-                        </div>
-                        <div class="card__body-detail">
-                            <h1 class="card__body-title t-ellipsis">Tranh cãi về công nghệ AI trong sáng tạo
-                                nghệ
-                                thuật</h1>
-                            <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
-                                eu
-                                enim
-                                pellentesque libero. Sit elit.</p>
-                        </div>
-                        <div class="card__body-line"></div>
-                        <a href="#" class="card__body-more">
-                            <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
-                        </a>
+                    <div class="detaillist-text">
+                        <p>Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang
+                            phục
+                            vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn
+                            từ
+                            những năm 1500, khi một họa sĩ vô danh ghép nhiều đoạn văn bản với nhau để tạo thành một bản
+                            mẫu
+                            văn bản. Đoạn văn bản này không những đã tồn tại năm thế kỉ, mà khi được áp dụng vào tin học
+                            văn
+                            phòng, nội dung của nó vẫn không hề bị thay đổi. Nó đã được phổ biến trong những năm 1960
+                            nhờ
+                            việc bán những bản giấy Letraset in những đoạn Lorem Ipsum, và gần đây hơn, được sử dụng
+                            trong
+                            các ứng dụng dàn trang, như Aldus PageMaker.</p>
+                        <br>
+                        <p> Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và
+                            cản
+                            trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với đoạn văn
+                            bản
+                            chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung" là nó khiến văn bản giống thật hơn,
+                            bình
+                            thường hơn. Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử dụng Lorem
+                            Ipsum
+                            làm đoạn văn bản giả, và nếu bạn thử tìm các đoạn "Lorem ipsum" trên mạng thì sẽ khám phá ra
+                            nhiều trang web hiện vẫn đang trong quá trình xây dựng. Có nhiều phiên bản khác nhau đã xuất
+                            hiện, đôi khi do vô tình ứng dụng dàn trang, như Aldus PageMaker.</p>
                     </div>
-                </div>
-                <div class="swiper-slide card__item">
-                    <a class="card__link-img" href="">
-                        <img src="./assets/images/card/card3.png" alt="" class="card__img">
+                    <a href="#" class="detail-img detail-img2">
+                        <img src="./assets/images/detail/detailPost1.png" alt="">
                     </a>
-                    <div class="card__body">
-                        <div class="card__time">
-                            <div class="card__time-day">15</div>
-                            <div class="card__time-month">TH 3</div>
-                        </div>
-                        <div class="card__body-top">
-                            <div class="card__body-name"><i class="fa-solid fa-user"></i>
-                                <span class="card-text">Thanh Nguyễn</span>
-                            </div>
-                            <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
-                                <span>AI</span>
-                            </div>
-                        </div>
-                        <div class="card__body-detail">
-                            <h1 class="card__body-title t-ellipsis">Tranh cãi về công nghệ AI trong sáng tạo
-                                nghệ
-                                thuật</h1>
-                            <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
-                                eu
-                                enim
-                                pellentesque libero. Sit elit.</p>
-                        </div>
-                        <div class="card__body-line"></div>
-                        <a href="#" class="card__body-more">
-                            <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-slide card__item">
-                    <a class="card__link-img" href="">
-                        <img src="./assets/images/card/card1.png" alt="" class="card__img">
+                    <a href="#" class="detail-img detail-img3">
+                        <img src="./assets/images/detail/detailService2.png" alt="">
                     </a>
-                    <div class="card__body">
-                        <div class="card__time">
-                            <div class="card__time-day">15</div>
-                            <div class="card__time-month">TH 3</div>
-                        </div>
-                        <div class="card__body-top">
-                            <div class="card__body-name"><i class="fa-solid fa-user"></i>
-                                <span class="card-text">Thanh Nguyễn</span>
-                            </div>
-                            <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
-                                <span>AI</span>
-                            </div>
-                        </div>
-                        <div class="card__body-detail">
-                            <h1 class="card__body-title t-ellipsis">Tranh cãi về công nghệ AI trong sáng tạo
-                                nghệ
-                                thuật</h1>
-                            <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
-                                eu
-                                enim
-                                pellentesque libero. Sit elit.</p>
-                        </div>
-                        <div class="card__body-line"></div>
-                        <a href="#" class="card__body-more">
-                            <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-next btn-used-slide"><i class="fa-solid fa-arrow-right"></i></div>
-        <div class="swiper-button-prev btn-used-slide"><i class="fa-solid fa-arrow-left"></i></div>
-        </div>
-        <div class="container mb-56">
-          <div class=" detail-poster">
-            <a href="#" class="imgYou img-decorUsed">
-                <img class="" src="./assets/images/detail/you.png" alt="">
-            </a>
-  
-            <a href="#" class="imgshareBig img-decorUsed">
-                <img class="" src="./assets/images/detail/share.png" alt="">
-            </a>
-            <div class="poster mb-56">
-                <div class="slogan">
-                    <div class="slogan__img">
-                        <img src="./assets/images/main/logoposter.png" alt="">
-                    </div>
-                    <h3 class="t-title-third">Hãy để chúng tôi đồng hành
-                        cùng những dự án của bạn</h3>
-                </div>
-                <div class="poster__right">
-                    <div class="poster__img ">
-                        <div class="btncol">
-                            <button class="btn-post btn-post1">KHÁM PHÁ THÊM </button>
-                        </div>
-                        <div class="poster-human ">
-                            <img src="./assets/images/main/human.png" alt="">
-                        </div>
-                        <div class="poster-line"></div>
-                        <div class="btncol">
-                            <button class="btn-post btn-post2">LIÊN HỆ NGAY </button>
+                    <div class="detail-social">
+                        <p class="detail-text">Chia sẻ bài viết</p>
+                        <div class="social">
+                            <a href="#" class="social-item">
+                                <img src="./assets/images/header/fb.png" alt="" class="social-img">
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="./assets/images/header/you.png" alt="" class="social-img">
+                            </a>
+                            <a href="#" class="social-item">
+                                <img src="./assets/images/header/inta.png" alt="" class="social-img">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="imgshareSmall img-decorUsed">
-                <img class="" src="./assets/images/detail/share.png" alt="">
-            </a>
-        </div>
-        </div>
+        </section>
+        <!-- detail text -->
 
+        <!-- slide new -->
+        <section class="section-Post">
+            <div class="container Post">
+                <!-- title slide -->
+                <div class="listTitle-used mb-20">
+                    <p class="used-title1 t-title-four">TIN TỨC ĐƯỢC CẬP NHẬT TỪ 1STEPER</p>
+                    <h3 class="used-title2 t-title-second mb-20">TIN TỨC LIÊN QUAN</h3>
+                </div>
+                <!-- title slide -->
+
+                <div class="swiper cardSwiper mb-56">
+                    <div class="swiper-wrapper card__list">
+                        <div class="swiper-slide card__item">
+                            <!-- card img -->
+                            <a class="card__link-img" href="">
+                                <img src="./assets/images/card/card1.png" alt="" class="card__img">
+                            </a>
+                            <!-- card img -->
+                            <!-- card text -->
+                            <div class="card__body">
+                                <div class="card__time">
+                                    <div class="card__time-day">15</div>
+                                    <div class="card__time-month">TH 3</div>
+                                </div>
+                                <div class="card__body-top">
+                                    <div class="card__body-name"><i class="fa-solid fa-user"></i>
+                                        <span class="card-text">Thanh Nguyễn</span>
+                                    </div>
+                                    <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
+                                        <span>AI</span>
+                                    </div>
+                                </div>
+                                <div class="card__body-detail">
+                                    <a href="" 
+                                    class="card__body-title
+                                     t-ellipsis">Tranh cãi về công nghệ AI trong sáng
+                                        tạo nghệ thuật</a>
+                                    <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
+                                        eu
+                                        enim
+                                        pellentesque libero. Sit elit.</p>
+                                </div>
+                                <div class="card__body-line"></div>
+                                <a href="#" class="card__body-more">
+                                    <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
+                                </a>
+                            </div>
+                            <!-- card text -->
+
+                        </div>
+                        <div class="swiper-slide card__item">
+                            <!-- card img -->
+                            <a class="card__link-img" href="">
+                                <img src="./assets/images/card/card1.png" alt="" class="card__img">
+                            </a>
+                            <!-- card img -->
+                            <!-- card text -->
+                            <div class="card__body">
+                                <div class="card__time">
+                                    <div class="card__time-day">15</div>
+                                    <div class="card__time-month">TH 3</div>
+                                </div>
+                                <div class="card__body-top">
+                                    <div class="card__body-name"><i class="fa-solid fa-user"></i>
+                                        <span class="card-text">Thanh Nguyễn</span>
+                                    </div>
+                                    <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
+                                        <span>AI</span>
+                                    </div>
+                                </div>
+                                <div class="card__body-detail">
+                                    <a href="" 
+                                    class="card__body-title
+                                     t-ellipsis">Tranh cãi về công nghệ AI trong sáng
+                                        tạo nghệ thuật</a>
+                                    <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
+                                        eu
+                                        enim
+                                        pellentesque libero. Sit elit.</p>
+                                </div>
+                                <div class="card__body-line"></div>
+                                <a href="#" class="card__body-more">
+                                    <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
+                                </a>
+                            </div>
+                            <!-- card text -->
+
+                        </div>
+                        <div class="swiper-slide card__item">
+                            <!-- card img -->
+                            <a class="card__link-img" href="">
+                                <img src="./assets/images/card/card1.png" alt="" class="card__img">
+                            </a>
+                            <!-- card img -->
+                            <!-- card text -->
+                            <div class="card__body">
+                                <div class="card__time">
+                                    <div class="card__time-day">15</div>
+                                    <div class="card__time-month">TH 3</div>
+                                </div>
+                                <div class="card__body-top">
+                                    <div class="card__body-name"><i class="fa-solid fa-user"></i>
+                                        <span class="card-text">Thanh Nguyễn</span>
+                                    </div>
+                                    <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
+                                        <span>AI</span>
+                                    </div>
+                                </div>
+                                <div class="card__body-detail">
+                                    <a href="" 
+                                    class="card__body-title
+                                     t-ellipsis">Tranh cãi về công nghệ AI trong sáng
+                                        tạo nghệ thuật</a>
+                                    <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
+                                        eu
+                                        enim
+                                        pellentesque libero. Sit elit.</p>
+                                </div>
+                                <div class="card__body-line"></div>
+                                <a href="#" class="card__body-more">
+                                    <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
+                                </a>
+                            </div>
+                            <!-- card text -->
+
+                        </div>
+                        <div class="swiper-slide card__item">
+                            <!-- card img -->
+                            <a class="card__link-img" href="">
+                                <img src="./assets/images/card/card1.png" alt="" class="card__img">
+                            </a>
+                            <!-- card img -->
+                            <!-- card text -->
+                            <div class="card__body">
+                                <div class="card__time">
+                                    <div class="card__time-day">15</div>
+                                    <div class="card__time-month">TH 3</div>
+                                </div>
+                                <div class="card__body-top">
+                                    <div class="card__body-name"><i class="fa-solid fa-user"></i>
+                                        <span class="card-text">Thanh Nguyễn</span>
+                                    </div>
+                                    <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
+                                        <span>AI</span>
+                                    </div>
+                                </div>
+                                <div class="card__body-detail">
+                                    <a href="" 
+                                    class="card__body-title
+                                     t-ellipsis">Tranh cãi về công nghệ AI trong sáng
+                                        tạo nghệ thuật</a>
+                                    <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet consectetur. Lacus
+                                        eu
+                                        enim
+                                        pellentesque libero. Sit elit.</p>
+                                </div>
+                                <div class="card__body-line"></div>
+                                <a href="#" class="card__body-more">
+                                    <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc thêm
+                                </a>
+                            </div>
+                            <!-- card text -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-nextCard btn-used-slide"><i
+                        class="fa-solid fa-arrow-right"></i></div>
+                <div class="swiper-button-prev swiper-button-prevCard btn-used-slide"><i
+                        class="fa-solid fa-arrow-left"></i></div>
+            </div>
+        </section>
+        <!-- slide news -->
+        <!-- poster -->
+        <section class="section-poster">
+            <div class="container mb-56">
+                <div class=" detail-poster">
+                    <a href="#" class="imgYou img-decorUsed">
+                        <img class="" src="./assets/images/detail/you.png" alt="">
+                    </a>
+
+                    <a href="#" class="imgshareBig img-decorUsed">
+                        <img class="" src="./assets/images/detail/share.png" alt="">
+                    </a>
+                    <div class="poster mb-56">
+                        <div class="slogan">
+                            <div class="slogan__img">
+                                <img src="./assets/images/main/logoposter.png" alt="">
+                            </div>
+                            <h3 class="t-title-third">Hãy để chúng tôi đồng hành
+                                cùng những dự án của bạn</h3>
+                        </div>
+                        <div class="poster__right">
+                            <div class="poster__img ">
+                                <div class="btncol">
+                                    <button class="btn-post btn-post1">KHÁM PHÁ THÊM </button>
+                                </div>
+                                <div class="poster-human ">
+                                    <img src="./assets/images/main/human.png" alt="">
+                                </div>
+                                <div class="poster-line"></div>
+                                <div class="btncol">
+                                    <button class="btn-post btn-post2">LIÊN HỆ NGAY </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="imgshareSmall img-decorUsed">
+                        <img class="" src="./assets/images/detail/share.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- poster -->
     </main>
+    <!-- footer -->
     <footer class="footer">
         <div class="container ">
             <div class="footer-main row">
+                <!-- footer left -->
                 <div class="footer__left col col-4">
                     <div class="footer__left-top mb-40">
                         <div class="footer__left-contact">
-                            <p>hr@1steper.com</p>
-                            <p>(+84) 981055524</p>
+                            <a href="" class="footer__left-contactLink">
+                                <p>hr@1steper.com</p>
+                            </a>
+                            <a href="" class="footer__left-contactLink">
+                                <p>(+84) 981055524</p>
+                            </a>
                         </div>
                         <a href="" class="arrowup">
                             <img src="./assets/images/footer/up-right-arrow 1.png" alt="">
@@ -506,53 +570,60 @@
                         <img src="./assets/images/footer/fanpageft.png" alt="">
                     </a>
                 </div>
+                <!-- footer left -->
+                <!-- footer mid -->
                 <div class="footer__mid col col-4">
                     <h3 class="t-16 mb-10">Thông tin công ty</h3>
                     <ul class="mb-56">
-                        <li class="mb-10" ><i class="fa-solid fa-location-dot"></i>
-                            <p class="t-14">324/15 Lý Thường Kiệt, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+                        <li class="mb-10">
+                            <a href="" class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="t-14">324/15 Lý Thường Kiệt, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+                            </a>
                         </li>
-                        <li ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                viewBox="0 0 16 16" fill="none">
-                                <path
-                                    d="M12.5 3.99992H14.705L12 1.29492V3.49992C12 3.63253 12.0527 3.75971 12.1464 3.85348C12.2402 3.94724 12.3674 3.99992 12.5 3.99992Z"
-                                    fill="#F9FFFC" />
-                                <path
-                                    d="M12.5 5C12.1022 5 11.7206 4.84196 11.4393 4.56066C11.158 4.27936 11 3.89782 11 3.5V1H5.5C5.10218 1 4.72064 1.15804 4.43934 1.43934C4.15804 1.72064 4 2.10218 4 2.5V6.1C5.11289 5.87239 6.27012 6.03051 7.28116 6.54833C8.29219 7.06615 9.09678 7.91281 9.56244 8.9489C10.0281 9.985 10.1271 11.1488 9.84309 12.2486C9.5591 13.3485 8.90906 14.3189 8 15H13.5C13.8978 15 14.2794 14.842 14.5607 14.5607C14.842 14.2794 15 13.8978 15 13.5V5H12.5ZM9.5 5H6.5C6.36739 5 6.24021 4.94732 6.14645 4.85355C6.05268 4.75979 6 4.63261 6 4.5C6 4.36739 6.05268 4.24021 6.14645 4.14645C6.24021 4.05268 6.36739 4 6.5 4H9.5C9.63261 4 9.75979 4.05268 9.85355 4.14645C9.94732 4.24021 10 4.36739 10 4.5C10 4.63261 9.94732 4.75979 9.85355 4.85355C9.75979 4.94732 9.63261 5 9.5 5ZM12.5 12.5H11.5C11.3674 12.5 11.2402 12.4473 11.1464 12.3536C11.0527 12.2598 11 12.1326 11 12C11 11.8674 11.0527 11.7402 11.1464 11.6464C11.2402 11.5527 11.3674 11.5 11.5 11.5H12.5C12.6326 11.5 12.7598 11.5527 12.8536 11.6464C12.9473 11.7402 13 11.8674 13 12C13 12.1326 12.9473 12.2598 12.8536 12.3536C12.7598 12.4473 12.6326 12.5 12.5 12.5ZM12.5 10H11.5C11.3674 10 11.2402 9.94732 11.1464 9.85355C11.0527 9.75979 11 9.63261 11 9.5C11 9.36739 11.0527 9.24021 11.1464 9.14645C11.2402 9.05268 11.3674 9 11.5 9H12.5C12.6326 9 12.7598 9.05268 12.8536 9.14645C12.9473 9.24021 13 9.36739 13 9.5C13 9.63261 12.9473 9.75979 12.8536 9.85355C12.7598 9.94732 12.6326 10 12.5 10ZM12.5 7.5H10.5C10.3674 7.5 10.2402 7.44732 10.1464 7.35355C10.0527 7.25979 10 7.13261 10 7C10 6.86739 10.0527 6.74021 10.1464 6.64645C10.2402 6.55268 10.3674 6.5 10.5 6.5H12.5C12.6326 6.5 12.7598 6.55268 12.8536 6.64645C12.9473 6.74021 13 6.86739 13 7C13 7.13261 12.9473 7.25979 12.8536 7.35355C12.7598 7.44732 12.6326 7.5 12.5 7.5Z"
-                                    fill="#F9FFFC" />
-                                <path
-                                    d="M5 7C4.20888 7 3.43552 7.2346 2.77772 7.67412C2.11992 8.11365 1.60723 8.73836 1.30448 9.46927C1.00173 10.2002 0.92252 11.0044 1.07686 11.7804C1.2312 12.5563 1.61216 13.269 2.17157 13.8284C2.73098 14.3878 3.44372 14.7688 4.21964 14.9231C4.99556 15.0775 5.79983 14.9983 6.53074 14.6955C7.26164 14.3928 7.88635 13.8801 8.32588 13.2223C8.76541 12.5645 9 11.7911 9 11C9 9.93913 8.57857 8.92172 7.82843 8.17157C7.07828 7.42143 6.06087 7 5 7ZM4 9.5C4.09889 9.5 4.19556 9.52932 4.27779 9.58426C4.36001 9.63921 4.4241 9.7173 4.46194 9.80866C4.49979 9.90002 4.50969 10.0006 4.49039 10.0975C4.4711 10.1945 4.42348 10.2836 4.35356 10.3536C4.28363 10.4235 4.19454 10.4711 4.09755 10.4904C4.00056 10.5097 3.90002 10.4998 3.80866 10.4619C3.7173 10.4241 3.63921 10.36 3.58427 10.2778C3.52933 10.1956 3.5 10.0989 3.5 10C3.5 9.86739 3.55268 9.74021 3.64645 9.64645C3.74022 9.55268 3.86739 9.5 4 9.5ZM6 12.5C5.90111 12.5 5.80444 12.4707 5.72222 12.4157C5.63999 12.3608 5.57591 12.2827 5.53806 12.1913C5.50022 12.1 5.49032 11.9994 5.50961 11.9025C5.5289 11.8055 5.57652 11.7164 5.64645 11.6464C5.71637 11.5765 5.80547 11.5289 5.90246 11.5096C5.99945 11.4903 6.09998 11.5002 6.19134 11.5381C6.28271 11.5759 6.3608 11.64 6.41574 11.7222C6.47068 11.8044 6.5 11.9011 6.5 12C6.5 12.1326 6.44732 12.2598 6.35356 12.3536C6.25979 12.4473 6.13261 12.5 6 12.5ZM6.355 10.355L4.355 12.355C4.30852 12.4019 4.25322 12.4391 4.19229 12.4644C4.13136 12.4898 4.06601 12.5029 4 12.5029C3.934 12.5029 3.86864 12.4898 3.80771 12.4644C3.74678 12.4391 3.69148 12.4019 3.645 12.355C3.59814 12.3085 3.56094 12.2532 3.53556 12.1923C3.51017 12.1314 3.4971 12.066 3.4971 12C3.4971 11.934 3.51017 11.8686 3.53556 11.8077C3.56094 11.7468 3.59814 11.6915 3.645 11.645L5.645 9.645C5.73915 9.55085 5.86685 9.49795 6 9.49795C6.13315 9.49795 6.26085 9.55085 6.355 9.645C6.44915 9.73915 6.50205 9.86685 6.50205 10C6.50205 10.1332 6.44915 10.2608 6.355 10.355Z"
-                                    fill="#F9FFFC" />
-                            </svg>
-                        <p class="t-14">0903 380 228</p>
+                        <li>
+                            <a href="" class="phone">
+                                <img src="./assets/images/footer/tax1.svg" alt="">
+                                <p class="t-14">0903 380 228</p>
+                            </a>
                         </li>
                     </ul>
                     <a href="" class="footer__logo">
                         <img src="./assets/images/footer/logoft.png" alt="">
                     </a>
                 </div>
+                <!-- footer mid -->
+                <!-- footer right -->
                 <div class="footer__right col col-4">
                     <h3 class="t-16 mb-10">Liên kết nhanh</h3>
-                    <ul class="mb-56">
-                        <li class="t-14"><a href="">Trang chủ</a></li>
-                        <li class="t-14"><a href="">Về chúng tôi</a></li>
-                        <li class="t-14"><a href="">Dự án</a></li>
-                        <li class="t-14"><a href="">Hợp tác</a></li>
-                        <li class="t-14"><a href="">Tuyển dụng</a></li>
-                        <li class="t-14"><a href="">Tin tức</a></li>
+                    <ul class="mb-56 footer__right-list menu-list">
+                        <li class="t-14 footer__right-item menu-item current-menu-item"><a class="footer__right-link"
+                                href="home">Trang chủ</a></li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Về chúng
+                                tôi</a></li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Dự án</a>
+                        </li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Hợp tác</a>
+                        </li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Tuyển
+                                dụng</a></li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Tin tức</a>
+                        </li>
                     </ul>
                     <div class="footer__forms">
                         <h3 class="t-16 mb-10">Đăng ký nhận tin</h3>
                         <div class="footer__form">
                             <i class="fa-solid fa-envelope"></i>
                             <input type="email" placeholder="Nhập E-mail của bạn">
-                            <a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+                            <a href="#" class="sendEmail"><i class="fa-solid fa-paper-plane"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!-- footer right -->
 
+            </div>
         </div>
+        <!-- copy right -->
         <div class="copy__right container">
             <div class="mona-design">
                 <div class="mona-detail">
@@ -572,10 +643,15 @@
                 </div>
             </div>
         </div>
+        <!-- copy right -->
     </footer>
+    <!-- footer -->
+    <!-- back to top -->
     <div class="back-to-top backToTop button-pulse">
         <i class="fa-solid fa-up-long"></i>
     </div>
+    <!-- back to top -->
+
     <script src="./js/library/jquery/jquery.js"></script>
     <script src="./js/library/gsap/gsap.min.js"></script>
     <script src="./js/library/gsap/ScrollTrigger.min.js"></script>
@@ -590,7 +666,6 @@
     <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
     <script src="./js/library/fancybox/fancybox.umd.js"></script>
     <script src="./js/library/owlcarousel/owl.carousel.js"></script>
-    <script src="./assets/font/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/js/all.min.js"></script>
     <script src="./js/main.js" type="module"></script>
 
 </body>

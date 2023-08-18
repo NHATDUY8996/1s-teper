@@ -9,11 +9,10 @@
 
   <link rel="stylesheet" href="./css/backdoor.css">
   <link rel="icon" type="image/png" href="./assets/images/mona.png" />
-  <title>Tuyển dụng</title>
+  <title>Chi tiết tuyển dụng</title>
 </head>
 
 <body>
-  <!-- header -->
   <header class="header">
     <div class="container">
       <div class="header__top">
@@ -238,19 +237,17 @@
       </div>
     </div>
   </header>
-  <!-- header -->
-
-  <main class="main mainRecruitment">
+  <main class="main ">
     <!-- banner -->
-    <section class="section-Bannerrecruitment">
-      <div class="banner banner-recruitment row mb-72">
+    <section class="section-bannerrecruitment">
+      <div class="banner banner-recruitment row mb-56">
 
         <div class="banner__top">
           <a href="#" class="imgYou img-decor">
             <img class="" src="./assets/images/detail/you.png" alt="">
           </a>
           <div class="titlebanner">
-            <h1 class="t-title banner-title-in">TUYỂN DỤNG</h1>
+            <h3 class="t-title banner-title-in">TUYỂN DỤNG</h3>
             <h3 class="t-title banner-title">TUYỂN DỤNG</h3>
           </div>
           <ul class="breadcrumb">
@@ -269,211 +266,239 @@
       </div>
     </section>
     <!-- banner -->
-    <!-- list product -->
-    <section class="section-products">
-      <div class="container mb-72">
-        <!-- title -->
-        <div class="listTitle-used t-center listTitle-usedCard mb-10">
-          <a href="#" class="detail-new detail-imgUsed">
-            <img class="" src="./assets/images/detail/new.png" alt="">
-          </a>
-          <p class="used-title1 t-title-four">CÁC VỊ TRÍ ĐANG TUYỂN DỤNG TẠI 1STEPER</p>
-          <h3 class="used-title2 t-title-second mb-20">TUYỂN DỤNG</h3>
-          <a href="#" class="detail-like detail-imgUsed">
-            <img class="" src="./assets/images/detail/like.png" alt="">
-          </a>
+
+    <!--recruitmentHead  -->
+    <section class="section-recruitmentHead">
+      <div class="recruitmentHead mb-56">
+        <div class="recruitmentHead-img">
+          <img src="./assets/images/detail/imgrecruitment.png" alt="">
         </div>
-        <!-- title -->
-        <!-- search -->
-        <div class="searchCard">
-          <input type="search" placeholder="Tìm kiếm tin tức">
-          <button class="btn-searchCard">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
-        <!-- search -->
-        <!-- filter -->
-        <div class="filterCard">
-          <div class="category">Danh mục:</div>
-          <div class="swiper filterSwiper">
-            <ul class="filter-list swiper-wrapper">
-              <li class="filter-item swiper-slide active">
-                <a href="" class="filter-link">Tất cả</a>
+        <div class="container ">
+          <div class="recruitmentTop">
+            <div class="recruitment__position">
+              <div class="recruitment__position-img">
+                <img src="./assets/images/detail/detailAnalist.svg" alt="">
+              </div>
+              <div class="recruitment__position-info">
+                <h3 class="recruitment__position-name">Nhân Viên Content Creator</h3>
+                <p>Hạn nhận hồ sơ: <b>30/07/2023</b></p>
+              </div>
+
+            </div>
+            <button class="btn-viewAll popup-open btn-second" data-popup="popupRE">Ứng tuyển ngay</button>
+
+          </div>
+          <div class="recruitmentInfo">
+            <ul class="recruitmentInfo__list">
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/dollar.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Thu nhập:</p>
+                  <b class="recruitmentInfo__item-Value">Từ 8-15 triệu</b>
+                </div>
               </li>
-              <li class="filter-item swiper-slide ">
-                <a href="" class="filter-link">Phòng Marketing</a>
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/part-time.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Hình thức:</p>
+                  <b class="recruitmentInfo__item-Value">Toàn thời gian</b>
+                </div>
               </li>
-              <li class="filter-item swiper-slide">
-                <a href="" class="filter-link">Phòng Design</a>
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/mortarboard.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Bằng cấp:</p>
+                  <b class="recruitmentInfo__item-Value">Đại học trở lên</b>
+                </div>
               </li>
-              <li class="filter-item swiper-slide">
-                <a href="" class="filter-link">Phòng Đối ngoại</a>
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/pin.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Nơi làm việc:</p>
+                  <b class="recruitmentInfo__item-Value">TP.HCM</b>
+                </div>
               </li>
-              <li class="filter-item swiper-slide">
-                <a href="" class="filter-link">Phòng Nhân sự</a>
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/work.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Kinh nghiệm:</p>
+                  <b class="recruitmentInfo__item-Value">2-3 năm</b>
+                </div>
               </li>
-              <li class="filter-item swiper-slide">
-                <a href="" class="filter-link">Phòng ban khác</a>
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/ranking.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Cấp bậc:</p>
+                  <b class="recruitmentInfo__item-Value">Nhân viên</b>
+                </div>
               </li>
+              <li class="recruitmentInfo__item ">
+                <div class="recruitmentInfo__item-img">
+                  <img src="./assets/images/detail/group1.svg" alt="">
+                </div>
+                <div class="recruitmentInfo__item-detail">
+                  <p class="recruitmentInfo__item-text">Số lượng tuyển:</p>
+                  <b class="recruitmentInfo__item-Value">2 người</b>
+                </div>
+              </li>
+
             </ul>
-            <div class="swiper-button-next btn-used-slide"><i class="fa-solid fa-chevron-right"></i></div>
-            <div class="swiper-button-prev btn-used-slide"><i class="fa-solid fa-chevron-left"></i></div>
           </div>
-
         </div>
-        <!-- filter -->
-        <!--list product -->
-        <div class="card__list row mb-20">
-          <div class="card__item col col-4">
-            <!-- card img -->
-            <a class="card__link-img" href="">
-              <img src="./assets/images/card/card1.png" alt="" class="card__img">
-            </a>
-            <!-- card img -->
-            <!-- card body -->
-            <div class="card__body">
-              <div class="card__numbersRecruitments">
-                <div class="card__textRecruitments">SL</div>
-                <div class="card__time-month">10</div>
-              </div>
-              <div class="card__position mb-10">Phòng Marketing</div>
-              <a href="" class="card__title mb-10">Nhân Viên Phát Triển Kênh Youtube</a>
-              <ul class="card__timeLocation mb-10">
-                <li>
-                  <img src="./assets/images/card/location1.png" alt="">
-                  Địa điểm
-                  <b>TP.HCM</b>
-                </li>
-                <li>
-                  <img src="./assets/images/card/time1.png" alt="">
-                  Thời hạn
-                  <b>30/07/2023</b>
-                </li>
-              </ul>
-            </div>
-            <!-- card body -->
-          </div>
-          <div class="card__item col col-4">
-            <!-- card img -->
-            <a class="card__link-img" href="">
-              <img src="./assets/images/card/card1.png" alt="" class="card__img">
-            </a>
-            <!-- card img -->
-            <!-- card body -->
-            <div class="card__body">
-              <div class="card__numbersRecruitments">
-                <div class="card__textRecruitments">SL</div>
-                <div class="card__time-month">10</div>
-              </div>
-              <div class="card__position mb-10">Phòng Marketing</div>
-              <a href="" class="card__title mb-10">Nhân Viên Phát Triển Kênh Youtube</a>
-              <ul class="card__timeLocation mb-10">
-                <li>
-                  <img src="./assets/images/card/location1.png" alt="">
-                  Địa điểm
-                  <b>TP.HCM</b>
-                </li>
-                <li>
-                  <img src="./assets/images/card/time1.png" alt="">
-                  Thời hạn
-                  <b>30/07/2023</b>
-                </li>
-              </ul>
-            </div>
-            <!-- card body -->
-          </div>
-          <div class="card__item col col-4">
-            <!-- card img -->
-            <a class="card__link-img" href="">
-              <img src="./assets/images/card/card1.png" alt="" class="card__img">
-            </a>
-            <!-- card img -->
-            <!-- card body -->
-            <div class="card__body">
-              <div class="card__numbersRecruitments">
-                <div class="card__textRecruitments">SL</div>
-                <div class="card__time-month">10</div>
-              </div>
-              <div class="card__position mb-10">Phòng Marketing</div>
-              <a href="" class="card__title mb-10">Nhân Viên Phát Triển Kênh Youtube</a>
-              <ul class="card__timeLocation mb-10">
-                <li>
-                  <img src="./assets/images/card/location1.png" alt="">
-                  Địa điểm
-                  <b>TP.HCM</b>
-                </li>
-                <li>
-                  <img src="./assets/images/card/time1.png" alt="">
-                  Thời hạn
-                  <b>30/07/2023</b>
-                </li>
-              </ul>
-            </div>
-            <!-- card body -->
-          </div>
-          <div class="card__item col col-4">
-            <!-- card img -->
-            <a class="card__link-img" href="">
-              <img src="./assets/images/card/card1.png" alt="" class="card__img">
-            </a>
-            <!-- card img -->
-            <!-- card body -->
-            <div class="card__body">
-              <div class="card__numbersRecruitments">
-                <div class="card__textRecruitments">SL</div>
-                <div class="card__time-month">10</div>
-              </div>
-              <div class="card__position mb-10">Phòng Marketing</div>
-              <a href="" class="card__title mb-10">Nhân Viên Phát Triển Kênh Youtube</a>
-              <ul class="card__timeLocation mb-10">
-                <li>
-                  <img src="./assets/images/card/location1.png" alt="">
-                  Địa điểm
-                  <b>TP.HCM</b>
-                </li>
-                <li>
-                  <img src="./assets/images/card/time1.png" alt="">
-                  Thời hạn
-                  <b>30/07/2023</b>
-                </li>
-              </ul>
-            </div>
-            <!-- card body -->
-          </div>
 
-        </div>
-        <!--list product -->
-
-        <!-- pagi -->
-        <ul class="page-numbers">
-          <li>
-            <a href="" class="prev page-numbers" href=""><i class="fa fa-angle-left"></i></a>
-          </li>
-          <li>
-            <span class="page-numbers current">1</span>
-          </li>
-          <li>
-            <a href="" class="page-numbers">2</a>
-          </li>
-          <li>
-            <a href="" class="page-numbers">3</a>
-          </li>
-          <li>
-            <span class="page-numbers dot">...</span>
-          </li>
-          <li>
-            <a href="" class="page-numbers">10</a>
-          </li>
-          <li>
-            <a href="" class="next page-numbers"><i class="fa fa-angle-right"></i></a>
-          </li>
-        </ul>
-        <!-- pagi -->
       </div>
     </section>
-    <!-- list product -->
+    <!--recruitmentHead  -->
+
+    <!-- recruitmentBody text -->
+    <section class="section-recruitmentBody">
+      <div class=" container mb-56">
+        <div class="recruitmentBody row">
+          <div class="recruitmentBody__detail col col-9">
+            <div class="recruitmentBody__detail-intro mb-10">
+              <h3 class="recruitmentBody__detail-title">Giới thiệu</h3>
+              <p>1Steper tập trung vào Sản xuất, Sáng tạo Nội dung và Quảng bá các Sản phẩm Giải trí trên Nền tảng số.
+                Với Giá trị Cốt lõi là đội ngũ nhân sự trẻ tài năng và sức sáng tạo vô hạn đến từ những chuyên gia sáng
+                tạo, chúng tôi đã và đang nỗ lực hết mình vì một mục tiêu chung là mang đến những trải nghiệm giải trí
+                sáng tạo, khác biệt và thú vị cho khán giả toàn cầu. Hiện nay chúng tôi đang có nhu cầu tuyển dụng vị
+                trí
+                <b>Nhân Viên Content Creator</b>, ứng tuyển ngay và liền!
+              </p>
+            </div>
+            <div class="recruitmentBody__detail-describe mb-10">
+              <h3 class="recruitmentBody__detail-title">Mô tả công việc</h3>
+              <ul class="recruitmentBody__detail-describes">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsu onsectetur adipiscing elit. .
+                </li>
+                <li>Amet lorem senectus eu erat id urna, augue nulla eros. Eget mauris massa, sagittis in adipiscing
+                  posuere ante. Rhoncus, viverra non dui, in et ullamcorper ultrices. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetu.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscin tetur adipiscing elit. Amet lorem senectus posuere
+                  ante. Rhoncus, viverra non dui, in et ullamcorper ultrices. </li>
+              </ul>
+            </div>
+            <div class="recruitmentBody__detail-request mb-10">
+              <h3 class="recruitmentBody__detail-title">Yêu cầu công việc</h3>
+              <ul class="recruitmentBody__detail-requests">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsu onsectetur adipiscing elit. .
+                </li>
+                <li>Amet lorem senectus eu erat id urna, augue nulla eros. Eget mauris massa, sagittis in adipiscing
+                  posuere ante. Rhoncus, viverra non dui, in et ullamcorper ultrices. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetu.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscin tetur adipiscing elit. Amet lorem senectus posuere
+                  ante. Rhoncus, viverra non dui, in et ullamcorper ultrices. </li>
+              </ul>
+            </div>
+            <div class="recruitmentBody__detail-benefit mb-10">
+              <h3 class="recruitmentBody__detail-title">Quyền lợi</h3>
+              <ul class="recruitmentBody__detail-benefits">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsu onsectetur adipiscing elit. .
+                </li>
+                <li>Amet lorem senectus eu erat id urna, augue nulla eros. Eget mauris massa, sagittis in adipiscing
+                  posuere ante. Rhoncus, viverra non dui, in et ullamcorper ultrices. </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetu.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscin tetur adipiscing elit. Amet lorem senectus posuere
+                  ante. Rhoncus, viverra non dui, in et ullamcorper ultrices. </li>
+              </ul>
+            </div>
+          </div>
+          <div class="recruitmentBody__img col col-3">
+            <img src="./assets/images/detail/detailrecruitment.png" alt="">
+          </div>
+        </div>
+        <button class="btn-viewAll popup-open btn-pri" data-popup="popupRE">Ứng tuyển ngay</button>
+      </div>
+    </section>
+    <!-- recruitmentBody text -->
+
+    <!-- poster -->
+    <section class="section-poster">
+      <div class="container mb-56">
+        <div class=" detail-poster">
+          <a href="#" class="imgYou img-decorUsed">
+            <img class="" src="./assets/images/detail/you.png" alt="">
+          </a>
+
+          <a href="#" class="imgshareBig img-decorUsed">
+            <img class="" src="./assets/images/detail/share.png" alt="">
+          </a>
+          <div class="poster mb-56">
+            <div class="slogan">
+              <div class="slogan__img">
+                <img src="./assets/images/main/logoposter.png" alt="">
+              </div>
+              <h3 class="t-title-third">Hãy để chúng tôi đồng hành
+                cùng những dự án của bạn</h3>
+            </div>
+            <div class="poster__right">
+              <div class="poster__img ">
+                <div class="btncol">
+                  <button class="btn-post btn-post1">KHÁM PHÁ THÊM </button>
+                </div>
+                <div class="poster-human ">
+                  <img src="./assets/images/main/human.png" alt="">
+                </div>
+                <div class="poster-line"></div>
+                <div class="btncol">
+                  <button class="btn-post btn-post2">LIÊN HỆ NGAY </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="imgshareSmall img-decorUsed">
+            <img class="" src="./assets/images/detail/share.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- poster -->
 
   </main>
+  <!-- popup -->
+  <div class="recruitment__form popup" data-popup-id="popupRE">
+    <div class="overlayRecruitment popup-overlay"></div>
+    <div class="recruitment__form-body  "> <!--popup -->
+      <button class="popup-close"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="recruitment__form-title">Ứng tuyển</h3>
+      <p class="recruitment__form-text">Điền thông tin của bạn vào form dưới đây</p>
+      <div class="recruitment__form-info row">
+        <div class="recruitment__form-name col col-6">
+          <input class="recruitment__form-inputName" type="text" placeholder="Họ và tên của bạn">
+        </div>
+        <div class="recruitment__form-email col col-6">
+          <input class="recruitment__form-inputEmail" type="email" placeholder="Email của bạn">
+        </div>
+        <div class="recruitment__form-phone col col-6">
+          <input class="recruitment__form-inputPhone" type="tel" placeholder="Số điện thoại">
+        </div>
+        <div class="recruitment__form-location col col-6">
+          <input class="recruitment__form-inputLocation" type="text" placeholder="Địa chỉ">
+        </div>
+        <!-- form import file -->
+        <div class="recruitment__form-file col">
+          <label class="recruitment__form-filelabel" for="recruitment__form-inputfile">
+            <i class="fa-solid fa-upload"></i>
+            <span id="fileLabelText">Tải CV của bạn</span>
+          </label>
+          <input id="recruitment__form-inputfile" class="recruitment__form-inputfile" type="file">
+        </div>
+        <!-- form import file -->
+      </div>
+    </div>
+  </div>
+  <!-- popup  -->
   <!-- footer -->
   <footer class="footer">
     <div class="container ">

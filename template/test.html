@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<style>
+
+.swiper-container{
+  width: 50%;
+}
+.swiper-wrapper{
+  width: 50%;
+}
+    .swiper-slide {
+      width: 40%;
+    }
+    img{
+      object-fit: cover;
+      width: 100%;
+    }
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+}
+</style>
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./assets/images/slide/slide1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/slide/slide2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/slide/slide3.png" alt="">
+    </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+      var mySwiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 190,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+})
+</script>
+</html>

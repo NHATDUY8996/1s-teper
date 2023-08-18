@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/backdoor.css">
+    <link rel="icon" type="image/png" href="./assets/images/mona.png" />
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="social">
+                    <a href="#" class="social-item">
+                        <img src="./assets/images/header/fb.png" alt="" class="social-img">
+                    </a>
+                    <a href="#" class="social-item">
+                        <img src="./assets/images/header/you.png" alt="" class="social-img">
+                    </a>
+                    <a href="#" class="social-item">
+                        <img src="./assets/images/header/inta.png" alt="" class="social-img">
+                    </a>
+                </div>
+                <div class="header__mobile-list mobile ">
+                    <!-- Cấu trúc html menu -->
+                    <ul class="menu-list">
+                        <li class="menu-item current-menu-item active">
+                            <a href="" class="menu-link ">
+                                <i class="fa-solid fa-house"></i>
+                                Về chúng tôi
+                            </a>
+                        </li>
+                        <li class="menu-item dropdown">
+
+                            <a href="#" class="menu-link">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                Dự án
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <a href="#" class="menu-link">
+                                        Dự án 1
+                                    </a>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="#" class="menu-link">
+                                        Dự án 2
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-handshake"></i>
+                                Hợp tác
+                            </a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-city"></i>
+                                Tuyển dụng
+                            </a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-newspaper"></i>
+                                Tin tức
+                            </a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-phone"></i>
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-list">
+                        <li class="menu-item current-menu-item active">
+                            <a href="" class="menu-link ">
+                                <i class="fa-solid fa-question"></i>
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-toolbox"></i>
+                                Công cụ
+                            </a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-gear"></i>
+                                Cài đặt
+                            </a>
+                        </li>
+                        <li class="menu-item current-menu-item">
+                            <a href="" class="menu-link">
+                                <i class="fa-solid fa-right-to-bracket"></i>
+                                Đăng nhập
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="menu-social">
+                        <li class="menu-social-item">
+                            <a href="" class="menu-social-link"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li class="menu-social-item">
+                            <a href="" class="menu-social-link"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                        <li class="menu-social-item">
+                            <a href="" class="menu-social-link"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li class="menu-social-item">
+                            <a href="" class="menu-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" class="header__logo">
+                    <img src="./assets/images/header/logoheader.png" alt="">
+                </a>
+                <div class="header__list-btn">
+                    <button class="header__btn-flag">
+                        <div class="header__flag-main">
+                            <div class="header__flag-img">
+                                <img src="./assets/images/header/flag-vn.png" alt="">
+                            </div>
+                            <span>VN</span>
+                            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                        </div>
+                        <div class="header__fag-list">
+                            <div class="header__flag-item">
+                                <div class="header__flag-img">
+                                    <img src="./assets/images/header/flag-vn.png" alt="">
+                                </div>
+                                <span>VN</span>
+                            </div>
+                            <div class="header__flag-item">
+                                <div class="header__flag-img">
+                                    <img src="./assets/images/header/flag-en.png" alt="">
+                                </div>
+                                <span>EN</span>
+                            </div>
+                            <div class="header__flag-item">
+                                <div class="header__flag-img">
+                                    <img src="./assets/images/header/flag-en.png" alt="">
+                                </div>
+                                <span>EN</span>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="search-body">
+                        <button class="header__search-mobile "><i
+                                class="btn-search-mobile fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="search-main search-moblie">
+                            <input type="search" class="search-inputMoblie" placeholder="Tim kiếm...">
+                            <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+                    <button class="header__btn-showMenuMb" aria-label="MenuMb">
+                        <svg viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </button>
+
+                </div>
+                <div class="mobile-overlay overlay"></div>
+            </div>
+            <div class="header__mid">
+                <div class="header-nav">
+                    <div class="menu-nav">
+                        <!-- Cấu trúc html menu -->
+                        <ul class="menu-list">
+                            <li class="menu-item current-menu-item">
+                                <a href="" class="menu-link ">
+                                    Về chúng tôi
+                                </a>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="" class="menu-link">
+                                    Dự án
+                                </a>
+                                <ul class="menu-list">
+                                    <li class="menu-item">
+                                        <a href="" class="menu-link">
+                                            Dự án 1
+                                        </a>
+                                    </li>
+                                    <li class="menu-item dropdown">
+                                        <a href="" class="menu-link">
+                                            Dự án 2
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">
+                                    Hợp tác
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">
+                                    Liên hệ
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="search-body">
+                            <button class="header__search"><i class="fa-solid fa-magnifying-glass"></i>
+
+                            </button>
+                            <div class="search-pc search-main">
+                                <input type="search" class="search-inputMoblie" placeholder="Tim kiếm...">
+                                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <main class="main">
+        <section class="section-banner">
+            <div class="banner banner-home row mb-56">
+                <div class="banner__top">
+                    <a href="#" class="imgYou img-decor">
+                        <img class="" src="./assets/images/detail/you.png" alt="">
+                    </a>
+                    <div class="titlebanner ">
+                        <h3 class="t-title banner-title-in">CÔNG TY CỔ PHẦN 1STEPER</h3>
+                        <h3 class="t-title banner-title">CÔNG TY CỔ PHẦN 1STEPER</h3>
+                    </div>
+                    <h3 class="banner-titlesmall mb-10">Sản xuất, Sáng tạo Nội dung và Quảng bá các sản phẩm Giải trí
+                        trên Nền tảng số. Với đội ngũ nhân sự trẻ tài năng.</h3>
+                    <div class="list-btnHome">
+                        <button class="btn-viewAll btn-second"><i class="fa-solid fa-phone"></i>Liên hệ ngay</button>
+
+                        <button class="btn-viewAll btn-pri">Khám phá thêm</button>
+                    </div>
+                </div>
+                <div class="banner__body row">
+                    <div class="banner__img-main">
+                        <button class="btn-down"><i class="fa-solid fa-arrow-down"></i></button>
+                        <img src="./assets/images/banner/bannerHome.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner -->
+        <section class="section-introHome">
+            <div class="container">
+                <div class="intro row mb-56">
+                    <div class="intro-left col col-7 ">
+                        <div class="intro-bg">
+                            <div class="intro-logo">
+                                <img src="./assets/images/contact/logocone.png" alt="">
+                            </div>
+                        </div>
+                        <div class="intro-leftBody">
+                            <div class="listTitle-used mb-20">
+                                <p class="used-title1 t-title-four">GIỚI THIỆU VỀ 1STEPER</p>
+                                <div class="listTitle-in">
+                                    <h3 class="used-title2 t-title-second">LỊCH SỬ HÌNH THÀNH</h3>
+                                    <h3 class="used-title2-in t-title-second">LỊCH SỬ HÌNH THÀNH</h3>
+                                </div>
+                            </div>
+                            <div class="intro-bodyText mb-20">
+                                Công ty Cổ phần 1Steper được thành lập vào ngày 18/05/2022 dựa trên nền tảng công ty mẹ
+                                là CÔNG TY CỔ PHẦN
+                                TRUYỀN THÔNG VÀ GIẢI TRÍ HG MEDIA, một công ty truyền thông số đa nền tảng, tập trung
+                                vào <b>Sản xuất,
+                                    Sáng tạo Nội dung và Quảng bá các Sản phẩm Giải trí trên Nền tảng số.</b> 
+                                <p></p>
+                                Với <b>đội ngũ nhân sự trẻ tài năng</b>, chúng tôi đã, đang và sẽ nỗ lực hết mình vì một
+                                mục tiêu chung là
+                                mang đến những trải nghiệm giải trí sáng tạo, khác biệt và thú vị cho khán giả toàn cầu.
+                            </div>
+                            <button class="btn-viewAll btn-second">Khám phá thêm<i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <a href="" class="intro-right col col-5">
+
+                        <img src="./assets/images/home/home1.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- banner -->
+
+        <!-- achievement -->
+        <section class="section-achievement">
+            <div class="achievement row ">
+                <div class="achievement-img col col-6">
+                    <img src="./assets/images/home/home2.png" alt="">
+                </div>
+                <div class="achievement-body col col-6">
+                    <div class="listTitle-used mb-20">
+                        <p class="used-title1 t-title-four">1STEPER</p>
+                        <div class="listTitle-in">
+                            <h3 class="used-title2 t-title-second">THÀNH TỰU ĐẠT ĐƯỢC</h3>
+                            <h3 class="used-title2-in t-title-second">THÀNH TỰU ĐẠT ĐƯỢC</h3>
+                        </div>
+                    </div>
+                    <ul class="achievement-list">
+                        <li class="achievement-item">
+                            <h3 class="achievement-item-title">2+</h3>
+                            <p class="achievement-item-text">Năm kinh nghiệm</p>
+                        </li>
+                        <li class="achievement-item">
+                            <h3 class="achievement-item-title">200+</h3>
+                            <p class="achievement-item-text">Dự án thành công</p>
+                        </li>
+                        <li class="achievement-item">
+                            <h3 class="achievement-item-title">500+</h3>
+                            <p class="achievement-item-text">Đối tác</p>
+                        </li>
+                        <li class="achievement-item">
+                            <h3 class="achievement-item-title">1000+</h3>
+                            <p class="achievement-item-text">Khách hàng</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- achievement -->
+        <!-- circle -->
+        <section class="section-circle">
+            <div class="circle-main">
+                <div class="img-circleMid">
+                    <img src="./assets/images/home/bgcirclemid.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="circle-body ">
+                        <!-- circle title -->
+                        <div class="listTitle-used mb-20">
+                            <p class="used-title1 t-title-four">CHÚNG TÔI LÀM GÌ?</p>
+                            <div class="listTitle-in">
+                                <h3 class="used-title2 t-title-second">DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                                <h3 class="used-title2-in t-title-second">DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                            </div>
+                        </div>
+                        <!-- circle title -->
+                        <!-- cirle -->
+                        <div class="circle mb-20">
+                            <div class="circle-list">
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/clapperboard.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/developmentplan.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/camera.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/tiktok1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/network1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/businessplan.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="circle-item">
+                                    <p class="circle-text">Hệ Thống Youtube
+                                        channel về phim </p>
+                                    <a href="#" class="circle-img">
+                                        <img src="./assets/images/circle/youtube.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="circle-itemMain">
+                                <img src="./assets/images/circle/circle.png" alt="">
+                            </div>
+                        </div>
+                        <!-- cirle -->
+                        <!-- circle row -->
+                        <div class="ccle">
+                            <!-- <div class="circleCol mb-20">
+                                <div class="circleCol-list row">
+                                    <div class="circleCol-item col col-4">
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/clapperboard.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleCol-item col col-4">
+        
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/developmentplan.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleCol-item col col-4">
+        
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/camera.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleCol-item col col-4">
+        
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/tiktok1.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleCol-item col col-4">
+        
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/network1.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleCol-item col col-4">
+        
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/businessplan.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleCol-item col col-4">
+        
+                                        <a href="#" class="circleCol-img">
+                                            <img src="./assets/images/circle/youtube.png" alt="">
+                                        </a>
+                                        <p class="circleCol-text t-title-four">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="circleRow  mb-20">
+                                <div class="circleRow-main">
+                                    <div class="circleRow-mainLeft">
+                                        <img src="./assets/images/banner/banner1.png" alt="">
+                                    </div>
+                                    <a href="#" class="circleRow-img">
+                                        <img src="./assets/images/circle/circle.png" alt="">
+                                    </a>
+                                    <div class="circleRow-mainRight">
+                                        <img src="./assets/images/banner/banner2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="circleRow-list row">
+                                    <div class="circleRow-item col col-6">
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/clapperboard.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleRow-item col col-6">
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/developmentplan.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleRow-item col col-6">
+
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/camera.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleRow-item col col-6">
+
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/tiktok1.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleRow-item col col-6">
+
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/network1.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleRow-item col col-6">
+
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/businessplan.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                    <div class="circleRow-item col col-6">
+
+                                        <a href="#" class="circleRow-img">
+                                            <img src="./assets/images/circle/youtube.png" alt="">
+                                        </a>
+                                        <p class="circleRow-text t-ellipsis">Hệ Thống Youtube
+                                            channel về phim </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- circle row -->
+                        <!-- circle text -->
+                        <div class="circle-detail">
+                            <h3 class="circle-title mb-20">Hỗ trợ đối tác mở rộng mạng lưới cộng tác,
+                                xây dựng hình ảnh thương hiệu/cá nhân trên nhiều kênh</h3>
+                            <button class="btn-viewAll btn-second">Xem tất cả<i
+                                    class="fa-solid fa-chevron-right"></i></button>
+
+                        </div>
+                        <!-- circle text -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- circle -->
+        <!-- slide home -->
+        <section class="section-slideHome">
+            <div class="slide-home mb-56">
+                <div class="container">
+                    <div class="slide-list">
+                        <!-- slide new title -->
+                        <div class="listTitle-used mb-20">
+                            <p class="used-title1 t-title-four">CHÚNG TÔI LÀM GÌ?</p>
+                            <div class="listTitle-in">
+                                <h3 class="used-title2 t-title-second">DỰ ÁN CỦA 1STEPER</h3>
+                                <h3 class="used-title2-in t-title-second">DỰ ÁN CỦA 1STEPER</h3>
+                            </div>
+                        </div>
+                        <!-- slide new title -->
+
+                        <div class="slide-item slide-itemLeft mb-56">
+                            <div class="slide-detail">
+                                <h3 class="slide-title mb-10">Hệ Thống Youtube channel về phim </h3>
+                                <p class="slide-text">Lorem ipsum dolor sit amet consectetur. Odio pellentesque diam
+                                    pulvinar viverra aliquam. Tortor nullam urna amet ipsum sit pellentesque. Aenean
+                                    velit libero ultrices mi. Sit dui pharetra tincidunt lobortis. Eu diam quis tempor
+                                    elementum venenatis.</p>
+                            </div>
+                            <div class="swiper slideswiper slideswiperLeft">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-prevLeft btn-used-slide"><i
+                                    class="fa-solid fa-left-long"></i></div>
+                            <div class="swiper-button-next swiper-button-nextLeft btn-used-slide"><i
+                                    class="fa-solid fa-right-long"></i></div>
+                        </div>
+                        <div class="slide-item slide-itemRight mb-56">
+                            <div class="swiper slideswiper slideswiperRight">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-detail">
+                                <h3 class="slide-title mb-10">Hệ Thống Youtube channel về phim </h3>
+                                <p class="slide-text">Lorem ipsum dolor sit amet consectetur. Odio pellentesque diam
+                                    pulvinar viverra aliquam. Tortor nullam urna amet ipsum sit pellentesque. Aenean
+                                    velit libero ultrices mi. Sit dui pharetra tincidunt lobortis. Eu diam quis tempor
+                                    elementum venenatis.</p>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-prevRight btn-used-slide"><i
+                                    class="fa-solid fa-left-long"></i></div>
+                            <div class="swiper-button-next swiper-button-nextRight btn-used-slide"><i
+                                    class="fa-solid fa-right-long"></i></div>
+                        </div>
+                        <div class="slide-item slide-itemLeft mb-56">
+                            <div class="slide-detail">
+                                <h3 class="slide-title mb-10">Hệ Thống Youtube channel về phim </h3>
+                                <p class="slide-text">Lorem ipsum dolor sit amet consectetur. Odio pellentesque diam
+                                    pulvinar viverra aliquam. Tortor nullam urna amet ipsum sit pellentesque. Aenean
+                                    velit libero ultrices mi. Sit dui pharetra tincidunt lobortis. Eu diam quis tempor
+                                    elementum venenatis.</p>
+                            </div>
+                            <div class="swiper slideswiper slideswiperLeft">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-prevLeft btn-used-slide"><i
+                                    class="fa-solid fa-left-long"></i></div>
+                            <div class="swiper-button-next swiper-button-nextLeft btn-used-slide"><i
+                                    class="fa-solid fa-right-long"></i></div>
+                        </div>
+                        <div class="slide-item slide-itemRight mb-56">
+                            <div class="swiper slideswiper slideswiperRight">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/slide/slide3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-detail">
+                                <h3 class="slide-title mb-10">Hệ Thống Youtube channel về phim </h3>
+                                <p class="slide-text">Lorem ipsum dolor sit amet consectetur. Odio pellentesque diam
+                                    pulvinar viverra aliquam. Tortor nullam urna amet ipsum sit pellentesque. Aenean
+                                    velit libero ultrices mi. Sit dui pharetra tincidunt lobortis. Eu diam quis tempor
+                                    elementum venenatis.</p>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-prevRight btn-used-slide"><i
+                                    class="fa-solid fa-left-long"></i></div>
+                            <div class="swiper-button-next swiper-button-nextRight btn-used-slide"><i
+                                    class="fa-solid fa-right-long"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- slide home -->
+
+        <!-- home poster -->
+        <section class="section-homePoster homePoster">
+            <!-- slide hot new -->
+            <div class="slideHotNew">
+                <div class="container mb-72">
+                    <div class="slide-hotNew">
+                        <!-- slide title -->
+                        <div class="slide-hotNew-top">
+                            <div class="slide-hotNew-tophide">
+                            </div>
+                            <button class="btn-viewAll btn-second">Xem tất cả<i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                            <div class="listTitle-used mb-20">
+                                <p class="used-title1 t-title-four">TIN TỨC, SỰ KIỆN</p>
+                                <div class="listTitle-in">
+                                    <h3 class="used-title2 t-title-second">TIN TỨC MỚI NHẤT</h3>
+                                    <h3 class="used-title2-in t-title-second">TIN TỨC MỚI NHẤT</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide title -->
+                        <!-- slide card  -->
+                        <div class="swiper cardSwiper mb-56">
+                            <div class="swiper-wrapper card__list">
+                                <div class="swiper-slide card__item">
+                                    <!-- slide img -->
+                                    <a class="card__link-img" href="">
+                                        <img src="./assets/images/card/card1.png" alt="" class="card__img">
+                                    </a>
+                                    <!-- slide img -->
+                                    <!-- slide text -->
+                                    <div class="card__body">
+                                        <div class="card__time">
+                                            <div class="card__time-day">15</div>
+                                            <div class="card__time-month">TH 3</div>
+                                        </div>
+                                        <div class="card__body-top">
+                                            <div class="card__body-name"><i class="fa-solid fa-user"></i>
+                                                <span class="card-text">Thanh Nguyễn</span>
+                                            </div>
+                                            <div class="card__body-tag"><i class="fa-solid fa-tag"></i>
+                                                <span>AI</span>
+                                            </div>
+                                        </div>
+                                        <div class="card__body-detail">
+                                                <a href="" class="card__body-title t-ellipsis">Tranh cãi về công nghệ AI trong
+                                                    sáng tạo
+                                                    nghệ
+                                                    thuật</a>
+                                            <p class="card__body-text t-ellipsis">Lorem ipsum dolor sit amet
+                                                consectetur. Lacus
+                                                eu
+                                                enim
+                                                pellentesque libero. Sit elit.</p>
+                                        </div>
+                                        <div class="card__body-line"></div>
+                                        <a href="#" class="card__body-more">
+                                            <div class="btn-icon"><i class="fa-solid fa-chevron-right"></i></div> Đọc
+                                            thêm
+                                        </a>
+                                    </div>
+                                    <!-- slide text -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slide card  -->
+
+                        <div class="swiper-button-next swiper-button-nextCard btn-used-slide"><i
+                                class="fa-solid fa-arrow-right"></i></div>
+                        <div class="swiper-button-prev swiper-button-prevCard btn-used-slide"><i
+                                class="fa-solid fa-arrow-left"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!-- slide hot new -->
+
+            <div class="posterMain">
+                <div class="container mb-56">
+                    <div class=" detail-poster">
+                        <a href="#" class="imgYou img-decorUsed">
+                            <img class="" src="./assets/images/detail/you.png" alt="">
+                        </a>
+
+                        <a href="#" class="imgshareBig img-decorUsed">
+                            <img class="" src="./assets/images/detail/share.png" alt="">
+                        </a>
+                        <div class="poster mb-56">
+                            <div class="slogan">
+                                <div class="slogan__img">
+                                    <img src="./assets/images/main/logoposter.png" alt="">
+                                </div>
+                                <h3 class="t-title-third">Hãy để chúng tôi đồng hành
+                                    cùng những dự án của bạn</h3>
+                            </div>
+                            <div class="poster__right">
+                                <div class="poster__img ">
+                                    <div class="btncol">
+                                        <button class="btn-post btn-post1">KHÁM PHÁ THÊM </button>
+                                    </div>
+                                    <div class="poster-human ">
+                                        <img src="./assets/images/main/human.png" alt="">
+                                    </div>
+                                    <div class="poster-line"></div>
+                                    <div class="btncol">
+                                        <button class="btn-post btn-post2">LIÊN HỆ NGAY </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="imgshareSmall img-decorUsed">
+                            <img class="" src="./assets/images/detail/share.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home poster -->
+
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container ">
+            <div class="footer-main row">
+                <!-- footer left -->
+                <div class="footer__left col col-4">
+                    <div class="footer__left-top mb-40">
+                        <div class="footer__left-contact">
+                            <a href="" class="footer__left-contactLink">
+                                <p>hr@1steper.com</p>
+                            </a>
+                            <a href="" class="footer__left-contactLink">
+                                <p>(+84) 981055524</p>
+                            </a>
+                        </div>
+                        <a href="" class="arrowup">
+                            <img src="./assets/images/footer/up-right-arrow 1.png" alt="">
+                        </a>
+                    </div>
+                    <p class="t-16 mb-10">Theo dõi chúng tôi</p>
+                    <div class="social mb-10">
+                        <a href="#" class="social-item">
+                            <img src="./assets/images/header/fb.png" alt="" class="social-img">
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="./assets/images/header/you.png" alt="" class="social-img">
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="./assets/images/header/inta.png" alt="" class="social-img">
+                        </a>
+                    </div>
+                    <a href="#" class="fanpage">
+                        <img src="./assets/images/footer/fanpageft.png" alt="">
+                    </a>
+                </div>
+                <!-- footer left -->
+                <!-- footer mid -->
+                <div class="footer__mid col col-4">
+                    <h3 class="t-16 mb-10">Thông tin công ty</h3>
+                    <ul class="mb-56">
+                        <li class="mb-10">
+                            <a href="" class="location">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="t-14">324/15 Lý Thường Kiệt, Phường 14, Quận 10, Thành phố Hồ Chí Minh</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="phone">
+                                <img src="./assets/images/footer/tax1.svg" alt="">
+                                <p class="t-14">0903 380 228</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="footer__logo">
+                        <img src="./assets/images/footer/logoft.png" alt="">
+                    </a>
+                </div>
+                <!-- footer mid -->
+                <!-- footer right -->
+                <div class="footer__right col col-4">
+                    <h3 class="t-16 mb-10">Liên kết nhanh</h3>
+                    <ul class="mb-56 footer__right-list menu-list">
+                        <li class="t-14 footer__right-item menu-item current-menu-item"><a class="footer__right-link"
+                                href="home">Trang chủ</a></li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Về chúng
+                                tôi</a></li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Dự án</a>
+                        </li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Hợp tác</a>
+                        </li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Tuyển
+                                dụng</a></li>
+                        <li class="t-14 footer__right-item menu-item"><a class="footer__right-link" href="">Tin tức</a>
+                        </li>
+                    </ul>
+                    <div class="footer__forms">
+                        <h3 class="t-16 mb-10">Đăng ký nhận tin</h3>
+                        <div class="footer__form">
+                            <form action="" method="get">
+                                <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Nhập E-mail của bạn">
+                            <button type="submit" href="#" class="sendEmail"><i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer right -->
+
+            </div>
+        </div>
+        <!-- copy right -->
+        <div class="copy__right container">
+            <div class="mona-design">
+                <div class="mona-detail">
+                    Thiết kế bởi
+                    <a href="#">
+                        <img src="./assets/images/footer/logomona.png" alt="">
+                    </a>
+                    <span>MONA .Media</span>
+                </div>
+                <span class="line1">/</span>
+                <div class="mona-share">
+                    <span>Website</span>
+                    <a href="#">
+                        <img src="./assets/images/footer/share.png" alt="">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- copy right -->
+    </footer>
+    <!-- footer -->
+    <!-- back to top -->
+    <div class="back-to-top backToTop button-pulse">
+        <i class="fa-solid fa-up-long"></i>
+    </div>
+    <!-- back to top -->
+
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/gsap/gsap.min.js"></script>
+    <script src="./js/library/gsap/ScrollTrigger.min.js"></script>
+    <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/library/aos/aos.js"></script>
+    <script src="./js/library/select2/select2.min.js"></script>
+    <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/library/jquery/jquery-migrate.js"></script>
+    <script src="./js/library/isotope/isotope.pkgd.min.js"></script>
+    <script src="./js/library/datetime/moment.min.js"></script>
+    <script src="./js/library/datetime/daterangepicker.min.js"></script>
+    <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/library/fancybox/fancybox.umd.js"></script>
+    <script src="./js/library/owlcarousel/owl.carousel.js"></script>
+    <script src="./js/main.js" type="module"></script>
+
+</body>
+
+</html>
